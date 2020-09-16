@@ -6,7 +6,7 @@ Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5
 The systematization of DOOH venue types will allow for clearer targeting by media buying
 platforms across a spectrum of available supply-side platforms offering DOOH inventory.
 
-# Participants
+## Participants
 
 * Adomni
 * Broadsign
@@ -16,7 +16,7 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 * VIOOH
 * Vistar Media
 
-# Adoption
+## Adoption
 
 | Participant | Status | Notes |
 | ----------- | ------ | ----- |

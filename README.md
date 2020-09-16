@@ -18,6 +18,6 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 
 ## Adoption
 
-| Participant | Status | Notes |
-| ----------- | ------ | ----- |
-| Place Exchange | Implemented | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 |
+| Participant | Status | Version | Notes |
+| ----------- | ------ | ------- | ----- |
+| Place Exchange | Production | 1.0 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 |

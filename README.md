@@ -6,6 +6,14 @@ Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5
 The systematization of DOOH venue types will allow for clearer targeting by media buying
 platforms across a spectrum of available supply-side platforms offering DOOH inventory.
 
+## Resources
+
+* v1.0 Specification
+
+Mapping to other taxonomies
+* [DMI Taxonomy](./DMI DOOH ID Mapping.csv)
+* DPAA Taxonomy
+
 ## Participants
 
 * Adomni

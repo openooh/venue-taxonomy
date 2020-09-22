@@ -11,7 +11,8 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 * v1.0 Specification
 
 Mapping to other taxonomies
-* [DMI Taxonomy](./DMI DOOH ID Mapping.csv)
+
+* Place Exchange has contributed a mapping with the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
 * DPAA Taxonomy
 
 ## Participants

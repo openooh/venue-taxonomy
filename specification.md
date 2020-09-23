@@ -31,8 +31,7 @@ Vistar Media is the world’s leading end-to-end programmatic ecosystem for digi
 * Eric Lamb, Vistar Media
 * Matthew Mercuri, Broadsign
 
-
-Versioning
+###Versioning
 
 | Version Number | Published    | Acceptance                              |
 | -------------- | ---------    | --------------------------------------- |
@@ -124,30 +123,14 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Transit
 
-| Child Category       | Category Definition                            | Enumeration ID | String Value               |
-| -------------------- | ---------------------------------------------- | -------------- | -------------------------- |
-| Airports             | Signage located throughout terminals in        | 101            | transit.airports           |
-|                      | arrival and departure areas, ticketing areas,  |                |                            |
-|                      | baggage claim, gate-hold rooms,                |                |                            |
-|                      | concourses, retail shops, and VIP lounges.     |                |                            |
-|                      |                                                |                |                            |
-| Buses                | Displays located on the inside of city or      | 102            | transit.buses              |
-|                      | intercity buses.                               |                |                            |
-|                      |                                                |                |                            |
-| Taxi & Rideshare TV  | Advertising displays placed inside taxis and   | 103            | transit.taxi\_rideshare\_t |
-|                      | rideshare vehicles visible to passengers in    |                | v                          |
-|                      | the back seat.                                 |                |                            |
-|                      |                                                |                |                            |
-| Taxi & Rideshare Top | Advertising displays placed on top of taxi and | 104            | transit.taxi\_rideshare\_t |
-|                      | rideshare vehicles visible to nearby           |                | op                         |
-|                      | pedestrian and drivers.                        |                |                            |
-|                      |                                                |                |                            |
-| Subway               | Advertising displays placed inside subway      | 105            | transit.subway             |
-|                      | trains or inside stations or on subway         |                |                            |
-|                      | platforms.                                     |                |                            |
-|                      |                                                |                |                            |
-| Train Stations       | Advertising displays placed inside train       | 106            | transit.train\_stations    |
-|                      | stations or on platforms.                      |                |                            |
+| Child Category | Category Definition                            | Enumeration ID | String Value               |
+| -------------- | ---------------------------------------------- | -------------- | -------------------------- |
+| Airports | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges. | 101 | transit.airports |
+| Buses | Displays located on the inside of city or intercity buses. | 102 | transit.buses |
+| Taxi & Rideshare TV  | Advertising displays placed inside taxis and rideshare vehicles visible to passengers in the back seat. | 103 | transit.taxi\_rideshare\_tv |
+| Taxi & Rideshare Top | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers. | 104 | transit.taxi\_rideshare\_top |
+| Subway | Advertising displays placed inside subway trains or inside stations or on subway platforms. | 105 | transit.subway |
+| Train Stations | Advertising displays placed inside train stations or on platforms. | 106 | transit.train\_stations    |
 
 ### Retail
 

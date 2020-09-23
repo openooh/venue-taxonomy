@@ -31,7 +31,7 @@ Vistar Media is the world’s leading end-to-end programmatic ecosystem for digi
 * Eric Lamb, Vistar Media
 * Matthew Mercuri, Broadsign
 
-###Versioning
+### Versioning
 
 | Version Number | Published    | Acceptance                              |
 | -------------- | ---------    | --------------------------------------- |

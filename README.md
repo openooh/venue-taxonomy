@@ -10,14 +10,13 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 
 Specification
 
-* [v1.0 Specification](./DOOH%20Venue%20Type%20Spec.pdf)
+* [v1.0 Specification](./specification.md) [(PDF)](./DOOH%20Venue%20Type%20Spec.pdf)
 
 Mapping to other taxonomies
 
 * Place Exchange has contributed a mapping with the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
-* DPAA Taxonomy
 
-## Participants
+## Specification Working Group
 
 * Adomni
 * Broadsign

@@ -32,3 +32,4 @@ Mapping to other taxonomies
 | ----------- | ------ | ------- | ----- |
 | Place Exchange | Production | 1.0 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 |
 | Broadsign | Production | 1.0 | Supports OpenOOH v1.0.0 as of 8/3/20 |
+| Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |

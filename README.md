@@ -34,3 +34,4 @@ Mapping to other taxonomies
 | Broadsign | Production | 1.0 | Supports OpenOOH v1.0.0 as of 8/3/20 |
 | Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |
 | Adomni | Evaluating | 1.0 |  |
+| Vistar Media | Production | 1.0 | Supports OpenOOH v1.0.0 (parent/child levels only) as of 9/9/20

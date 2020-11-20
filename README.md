@@ -10,14 +10,13 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 
 Specification
 
-* [v1.0 Specification](./DOOH%20Venue%20Type%20Spec.pdf)
+* [v1.0 Specification](./specification.md) [(PDF)](./DOOH%20Venue%20Type%20Spec.pdf)
 
 Mapping to other taxonomies
 
 * Place Exchange has contributed a mapping with the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
-* DPAA Taxonomy
 
-## Participants
+## Specification Working Group
 
 * Adomni
 * Broadsign
@@ -32,3 +31,7 @@ Mapping to other taxonomies
 | Participant | Status | Version | Notes |
 | ----------- | ------ | ------- | ----- |
 | Place Exchange | Production | 1.0 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 |
+| Broadsign | Production | 1.0 | Supports OpenOOH v1.0.0 as of 8/3/20 |
+| Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |
+| Adomni | Evaluating | 1.0 |  |
+| Vistar Media | Production | 1.0 | Supports OpenOOH v1.0.0 (parent/child levels only) as of 9/9/20

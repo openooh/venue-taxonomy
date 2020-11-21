@@ -83,10 +83,6 @@ In terms of placing venue types, this specification suggests placing venue type 
 `device.ext.dooh.venuetypeid`
 `device.ext.dooh.venuetypestring`
 
-| Attribute | Type | Description |
-| --------- | ---- | ----------- |
-| `device.ext.dooh.venuetypeid` | Integer array | List of IDs that describe the venue of the requesting screen | 
-
 ## Value Format
 
 The following spec subscribes to UTF-8 encoding.
@@ -123,14 +119,14 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Transit
 
-| Child Category | Category Definition                            | Enumeration ID | String Value               |
-| -------------- | ---------------------------------------------- | -------------- | -------------------------- |
-| Airports | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges. | 101 | transit.airports |
-| Buses | Displays located on the inside of city or intercity buses. | 102 | transit.buses |
+| Child Category       | Category Definition                            | Enumeration ID | String Value               |
+| -------------------- | ---------------------------------------------- | -------------- | -------------------------- |
+| Airports             | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges. | 101 | transit.airports |
+| Buses                | Displays located on the inside of city or intercity buses. | 102 | transit.buses |
 | Taxi & Rideshare TV  | Advertising displays placed inside taxis and rideshare vehicles visible to passengers in the back seat. | 103 | transit.taxi\_rideshare\_tv |
 | Taxi & Rideshare Top | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers. | 104 | transit.taxi\_rideshare\_top |
-| Subway | Advertising displays placed inside subway trains or inside stations or on subway platforms. | 105 | transit.subway |
-| Train Stations | Advertising displays placed inside train stations or on platforms. | 106 | transit.train\_stations    |
+| Subway               | Advertising displays placed inside subway trains or inside stations or on subway platforms. | 105 | transit.subway |
+| Train Stations       | Advertising displays placed inside train stations or on platforms. | 106 | transit.train\_stations    |
 
 ### Retail
 
@@ -199,16 +195,8 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 | Child Category | Category Definition                             | Enumeration ID | String Value           |
 | -------------- | ----------------------------------------------- | -------------- | ---------------------- |
-|                |                                                 |                |                        |
-| DMVs           | An office building, also known as an office     | 901            | government.dmv         |
-|                | block or business center is a form of           |                |                        |
-|                | commercial building which contains spaces       |                |                        |
-|                | mainly designed to be used for offices.         |                |                        |
-|                | Advertising displays may be in building         |                |                        |
-|                | lobbies, common areas, or in elevators.         |                |                        |
-|                |                                                 |                |                        |
-| Military Bases | A facility that houses and facilitates training | 902            | government.military\_b |
-|                | for military personnel and operations.          |                | ases                   |
+| DMVs           | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.         | 901            | government.dmv         |
+| Military Bases | A facility that houses and facilitates training for military personnel and operations. | 902            | government.military\_bases |
 
 ### Financial
 
@@ -228,25 +216,13 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value              |
 | ------------------- | ------------------- | -------------- | ------------------------- |
-|                     |                     |                |                           |
-| Arrival Hall        | TBC                 | 10101          | transit.airports.arrivals |
-|                     |                     |                | \_hall                    |
-|                     |                     |                |                           |
-| Baggage Claim       | TBC                 | 10102          | transit.airports.baggag   |
-|                     |                     |                | e\_claim                  |
-|                     |                     |                |                           |
-| Departures Hall     | TBC                 | 10103          | transit.airports.departu  |
-|                     |                     |                | res\_hall                 |
-|                     |                     |                |                           |
-| Food Court          | TBC                 | 10104          | transit.airports.food\_co |
-|                     |                     |                | urt                       |
-|                     |                     |                |                           |
+| Arrival Hall        | TBC                 | 10101          | transit.airports.arrivals\_hall                    |
+| Baggage Claim       | TBC                 | 10102          | transit.airports.baggage\_claim                  |
+| Departures Hall     | TBC                 | 10103          | transit.airports.departures\_hall                 |
+| Food Court          | TBC                 | 10104          | transit.airports.food\_court                       |
 | Gates               | TBC                 | 10105          | transit.airports.gates    |
-|                     |                     |                |                           |
 | Lounges             | TBC                 | 10106          | transit.airports.lounges  |
-|                     |                     |                |                           |
-| Shopping Area       | TBC                 | 10107          | transit.airports.shoppin  |
-|                     |                     |                | g\_area                   |
+| Shopping Area       | TBC                 | 10107          | transit.airports.shopping\_area                   |
 
 ### Transit: Buses
 
@@ -348,245 +324,6 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 | ------------------- | ------------------- | -------------- | ----------------------- |
 | Lobby               | TBC                 | 110101         | residential.apartment\_buildings.lobby         |
 | Elevator            | TBC                 | 110102         | residential.apartment\_buildings.elevator      |
-
-## Summary Table
-
-| Parent            | Child              | Grandchild        | Enumeration | Enumeration          | String                 |
-| ----------------- | ------------------ | ----------------- | ----------- | -------------------- | ---------------------- |
-| Category          | Category           | Category          | ID          | Array                | List                   |
-|                   |                    |                   |             |                      |                        |
-| Transit           | \-                 | \-                | 1           | \[1\]                | transit                |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | \-                | 101         | \[1, 101\]           | transit.airports       |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | Arrivals Hall     | 10101       | \[1, 101, 10101\]    | transit.airports.arri  |
-|                   |                    |                   |             |                      | vals\_hall             |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | Baggage Claim     | 10102       | \[1, 101, 10102\]    | transit.airports.bag   |
-|                   |                    |                   |             |                      | gage\_claim            |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | Departures Hall   | 10103       | \[1, 101, 10103\]    | transit.airports.dep   |
-|                   |                    |                   |             |                      | artures\_hall          |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | Food Court        | 10104       | \[1, 101, 10104\]    | transit.airports.foo   |
-|                   |                    |                   |             |                      | d\_court               |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | Gates             | 10105       | \[1, 101, 10105\]    | transit.airports.gat   |
-|                   |                    |                   |             |                      | es                     |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | Lounges           | 10106       | \[1, 101, 10106\]    | transit.airports.lou   |
-|                   |                    |                   |             |                      | nges                   |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Airports           | Shopping Area     | 10107       | \[1, 101, 10107\]    | transit.airports.sho   |
-|                   |                    |                   |             |                      | pping\_area            |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Buses              | \-                | 102         | \[1, 102\]           | transit.buses          |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Buses              | Bus               | 10201       | \[1, 102, 10201\]    | transit.buses.bus      |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Buses              | Terminal          | 10202       | \[1, 102, 10202\]    | transit.buses.termi    |
-| Transit           | Taxi & Rideshare   | \-                | 103         | \[1, 103\]           | transit.taxi\_ridesha  |
-|                   | TV                 |                   |             |                      | re\_tv                 |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Taxi & Rideshare   | \-                | 104         | \[1, 104\]           | transit.taxi\_ridesha  |
-|                   | Top                |                   |             |                      | re\_top                |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Subway             | \-                | 105         | \[1, 105\]           | transit.subway         |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Subway             | Subway Train      | 10501       | \[1, 105, 10501\]    | transit.subway.trai    |
-|                   |                    |                   |             |                      | n                      |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Subway             | Platform          | 10502       | \[1, 105, 10502\]    | transit.subway.plat    |
-|                   |                    |                   |             |                      | form                   |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Train Stations     | \-                | 106         | \[1, 106\]           | transit.train\_statio  |
-|                   |                    |                   |             |                      | ns                     |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Train Stations     | Train             | 10601       | \[1, 106, 10601\]    | transit\_train\_statio |
-|                   |                    |                   |             |                      | ns.train               |
-|                   |                    |                   |             |                      |                        |
-| Transit           | Train Stations     | Platform          | 10602       | \[1, 106, 10602\]    | transit\_train\_statio |
-|                   |                    |                   |             |                      | ns.platform            |
-|                   |                    |                   |             |                      |                        |
-| Retail            | \-                 | \-                | 2           | \[2\]                | retail                 |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Gas Station        | \-                | 201         | \[2, 201\]           | retail.gas\_stations   |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Gas Station        | Pump              | 20101       | \[2, 201, 20101\]    | retail.gas\_stations.  |
-|                   |                    |                   |             |                      | pump                   |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Gas Station        | Shop              | 20102       | \[2, 201, 20102\]    | retail.gas\_stations.  |
-|                   |                    |                   |             |                      | shop                   |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Convenience        | \-                | 202         | \[2, 202\]           | retail.convenience     |
-|                   | Stores             |                   |             |                      | \_store                |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Grocery            | \-                | 203         | \[2, 203\]           | retail.grocery         |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Grocery            | Shop Entrance     | 20301       | \[2, 203, 20301\]    | retail.grocery.shop    |
-|                   |                    |                   |             |                      | \_entrance             |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Grocery            | Check Out         | 20302       | \[2, 203, 20302\]    | retail.grocery.chec    |
-|                   |                    |                   |             |                      | k\_out                 |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Liquor Stores      | \-                | 204         | \[2, 204\]           | retail.liquor\_stores  |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Malls              | \-                | 205         | \[2, 205\]           | retail.malls           |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Malls              | Concourse         | 20501       | \[2, 205, 20501\]    | retail.malls.concou    |
-|                   |                    |                   |             |                      | rse                    |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Malls              | Food Court        | 20502       | \[2, 205, 20502\]    | retail.malls.food\_c   |
-|                   |                    |                   |             |                      | ourt                   |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Malls              | Spectacular       | 20503       | \[2, 205, 20503\]    | retail.malls.specta    |
-|                   |                    |                   |             |                      | cular                  |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Dispensaries       | \-                | 206         | \[2, 206\]           | retail.dispensaries    |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Pharmacies         | \-                | 207         | \[2, 207\]           | retail.pharmacies      |
-|                   |                    |                   |             |                      |                        |
-| Retail            | Parking Garages    | \-                | 208         | \[2, 208\]           | retail.parking\_gara   |
-|                   |                    |                   |             |                      | ges                    |
-|                   |                    |                   |             |                      |                        |
-| Outdoor           | \-                 | \-                | 3           | \[3\]                | outdoor                |
-|                   |                    |                   |             |                      |                        |
-| Outdoor           | Billboard          | \-                | 301         | \[3, 301\]           | outdoor.billboards     |
-|                   |                    |                   |             |                      |                        |
-| Outdoor           | Billboard          | Roadside          | 30101       | \[3, 301, 30101\]    | outdoor.billboards.    |
-|                   |                    |                   |             |                      | roadside               |
-|                   |                    |                   |             |                      |                        |
-| Outdoor           | Billboard          | Highway           | 30102       | \[3, 301, 30102\]    | outdoor.billboards.    |
-| Outdoor           | Billboard          | Spectacular       | 30103       | \[3, 301, 30103\]    | outdoor.billboards.    |
-|                   |                    |                   |             |                      | spectacular            |
-|                   |                    |                   |             |                      |                        |
-| Outdoor           | Urban Panels       | \-                | 302         | \[3, 302\]           | outdoor.urban\_pa      |
-|                   |                    |                   |             |                      | nels                   |
-|                   |                    |                   |             |                      |                        |
-| Outdoor           | Bus Shelters       | \-                | 303         | \[3, 303\]           | outdoor.bust\_shelt    |
-|                   |                    |                   |             |                      | ers                    |
-|                   |                    |                   |             |                      |                        |
-| Health and Beauty | \-                 | \-                | 4           | \[4\]                | health\_beauty         |
-|                   |                    |                   |             |                      |                        |
-| Health and Beauty | Gyms               | \-                | 401         | \[4, 401\]           | health\_beauty.gy      |
-|                   |                    |                   |             |                      | ms                     |
-|                   |                    |                   |             |                      |                        |
-| Health and Beauty | Gyms               | Lobby             | 40101       | \[4, 401, 40101\]    | health\_beauty.gy      |
-|                   |                    |                   |             |                      | ms.lobby               |
-|                   |                    |                   |             |                      |                        |
-| Health and Beauty | Gyms               | Fitness Equipment | 40102       | \[4, 401, 40102\]    | health\_beauty.gy      |
-|                   |                    |                   |             |                      | ms.equipment           |
-|                   |                    |                   |             |                      |                        |
-| Health and Beauty | Salons             | \-                | 402         | \[4, 402\]           | health\_beauty.salo    |
-|                   |                    |                   |             |                      | ns                     |
-|                   |                    |                   |             |                      |                        |
-| Health and Beauty | Spas               | \-                | 403         | \[4, 403\]           | health\_beauty.spa     |
-|                   |                    |                   |             |                      | s                      |
-|                   |                    |                   |             |                      |                        |
-| Point of Care     | \-                 | \-                | 5           | \[5\]                | point\_care            |
-|                   |                    |                   |             |                      |                        |
-| Point of Care     | Doctor’s Offices   | \-                | 501         | \[5, 501\]           | point\_care.doctor\_   |
-|                   |                    |                   |             |                      | offices                |
-|                   |                    |                   |             |                      |                        |
-| Point of Care     | Veterinary Offices | \-                | 502         | \[5, 502\]           | point\_care.veterin    |
-|                   |                    |                   |             |                      | ary\_offices           |
-|                   |                    |                   |             |                      |                        |
-| Education         | \-                 | \-                | 6           | \[6\]                | education              |
-|                   |                    |                   |             |                      |                        |
-| Education         | Schools            | \-                | 601         | \[6, 601\]           | education.schools      |
-|                   |                    |                   |             |                      |                        |
-| Education         | Colleges and       | \-                | 602         | \[6, 602\]           | education.colleges     |
-|                   | Universities       |                   |             |                      |                        |
-|                   |                    |                   |             |                      |                        |
-| Office Buildings  | \-                 | \-                | 7           | \[7\]                | office\_buildings      |
-|                   |                    |                   |             |                      |                        |
-| Office Buildings  | Office Buildings   | \-                | 701         | \[7, 701\]           | office\_buildings.off  |
-|                   |                    |                   |             |                      | ice\_buildings         |
-|                   |                    |                   |             |                      |                        |
-| Office Buildings  | Office Buildings   | Elevator          | 70101       | \[7, 701, 70101\]    | office\_buildings.off  |
-|                   |                    |                   |             |                      | ice\_buildings.elev    |
-|                   |                    |                   |             |                      | ator                   |
-|                   |                    |                   |             |                      |                        |
-| Office Buildings  | Office Buildings   | Lobby             | 70102       | \[7, 701, 70102\]    | office\_buildings.off  |
-|                   |                    |                   |             |                      | ice\_buildings.lobb    |
-|                   |                    |                   |             |                      | y                      |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | \-                 | \-                | 8           | \[8\]                | entertainment          |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Recreational       | \-                | 801         | \[8, 801\]           | entertainment.recr     |
-|                   | Locations          |                   |             |                      | eational               |
-| Entertainment     | Recreational       | Theme Parks       | 80101       | \[8, 801, 80101\]    | entertainment.recr     |
-|                   | Locations          |                   |             |                      | eational.theme\_pa     |
-|                   |                    |                   |             |                      | rks                    |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Recreational       | Museums and       | 80102       | \[8, 801, 80102\]    | entertainment.recr     |
-|                   | Locations          | Galleries         |             |                      | eational.museums       |
-|                   |                    |                   |             |                      | \_galleries            |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Recreational       | Concert Venues    | 80103       | \[8, 801, 80103\]    | entertainment.recr     |
-|                   | Locations          |                   |             |                      | eational.concert\_v    |
-|                   |                    |                   |             |                      | enues                  |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Movie Theaters     | \-                | 802         | \[8, 802\]           | entertainment.mov      |
-|                   |                    |                   |             |                      | ie\_theaters           |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Movie Theaters     | Lobby             | 80201       | \[8, 802, 80201\]    | entertainment.mov      |
-|                   |                    |                   |             |                      | ie\_theaters.lobby     |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Movie Theaters     | Food Court        | 80202       | \[8, 802, 80202\]    | entertainment.mov      |
-|                   |                    |                   |             |                      | ie\_theaters.food\_c   |
-|                   |                    |                   |             |                      | ourt                   |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Sports             | \-                | 803         | \[8, 803\]           | entertainment.spor     |
-|                   | Entertainment      |                   |             |                      | ts                     |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Sports             | Sport Arena       | 80301       | \[8, 803, 80301\]    | entertainment.spor     |
-|                   | Entertainment      |                   |             |                      | ts.arena               |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Sports             | Club House        | 80302       | \[8, 803, 80302\]    | entertainment.spor     |
-|                   | Entertainment      |                   |             |                      | ts.club\_house         |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Bars               | \-                | 804         | \[8, 804\]           | entertainment.bars     |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Casual Dining      | \-                | 805         | \[8, 805\]           | entertainment.cas      |
-|                   |                    |                   |             |                      | ual\_dining            |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | QSR                | \-                | 806         | \[8, 806\]           | entertainment.qsr      |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Hotels             | \-                | 807         | \[8, 807\]           | entertainment.hote     |
-|                   |                    |                   |             |                      | ls                     |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Hotels             | Lobby             | 80701       | \[8, 807, 80701\]    | entertainment.hote     |
-|                   |                    |                   |             |                      | ls.lobby               |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Hotels             | Elevator          | 80702       | \[8, 807, 80702\]    | entertainment.hote     |
-|                   |                    |                   |             |                      | ls.elevator            |
-|                   |                    |                   |             |                      |                        |
-| Entertainment     | Golf Carts         | \-                | 808         | \[8, 808\]           | entertainment.golf     |
-|                   |                    |                   |             |                      | \_carts                |
-|                   |                    |                   |             |                      |                        |
-| Government        | \-                 | \-                | 9           | \[9\]                | government             |
-|                   |                    |                   |             |                      |                        |
-| Government        | DMVs               | \-                | 901         | \[9, 901\]           | government.dmv         |
-|                   |                    |                   |             |                      |                        |
-| Government        | Military Bases     | \-                | 902         | \[9, 902\]           | government.militar     |
-|                   |                    |                   |             |                      | y\_bases               |
-|                   |                    |                   |             |                      |                        |
-| Financial         | \-                 | \-                | 10          | \[10\]               | financial              |
-|                   |                    |                   |             |                      |                        |
-| Financial         | Banks              | \-                | 1001        | \[10, 1001\]         | financial.banks        |
-|                   |                    |                   |             |                      |                        |
-| Residential       | \-                 | \-                | 11          | \[11\]               | residential            |
-| Residential       | Apartment          | \-                | 1101        | \[11, 1101\]         | residential.apartm     |
-|                   | Buildings          |                   |             |                      | ent\_buildings         |
-|                   |                    |                   |             |                      |                        |
-| Residential       | Apartment          | Lobby             | 110101      | \[11, 1101, 110101\] | residential.apartm     |
-|                   | Buildings          |                   |             |                      | ent\_buildings.lobb    |
-|                   |                    |                   |             |                      | y                      |
-|                   |                    |                   |             |                      |                        |
-| Residential       | Apartment          | Elevator          | 110102      | \[11, 1101, 110102\] | residential.apartm     |
-|                   | Buildings          |                   |             |                      | ent\_buildings.elev    |
-|                   |                    |                   |             |                      | ator                   |
 
 # Specification Expansion & Amendment Process
 

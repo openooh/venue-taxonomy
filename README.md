@@ -30,11 +30,11 @@ Mapping to other taxonomies
 
 | Participant | Status | Version | Notes |
 | ----------- | ------ | ------- | ----- |
-| Place Exchange | Production | 1.0 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 |
-| Broadsign | Production | 1.0 | Supports OpenOOH v1.0.0 as of 8/3/20 |
-| Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |
 | Adomni | Evaluating | 1.0 |  |
-| Vistar Media | Production | 1.0 | Supports OpenOOH v1.0.0 (parent/child levels only) as of 9/9/20
+| Broadsign | Production | 1.0 | Supports OpenOOH v1.0.0 as of 8/3/20 |
 | Campsite | Production | 1.0 | Supports OpenOOH v1.0.0 as of 12/03/20 |
+| Place Exchange | Production | 1.0 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 |
+| Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |
+| Vistar Media | Production | 1.0 | Supports OpenOOH v1.0.0 (parent/child levels only) as of 9/9/20
 
 

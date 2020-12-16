@@ -33,9 +33,12 @@ Vistar Media is the world’s leading end-to-end programmatic ecosystem for digi
 
 ### Versioning
 
-| Version Number | Published    | Acceptance                              |
-| -------------- | ---------    | --------------------------------------- |
-| 1.0            | June 4, 2020 | Broadsign, The Trade Desk, Vistar Media |
+| Version | Published        | Notes.                                                                             |
+| ------- | ---------------- | ---------------------------------------------------------------------------------- |
+| 1.0.0   | June 4, 2020     | Initial Release                                                                    |
+| 1.0.1   | August 4, 2020   | Typos in `bus_shelters`, and misassociation with child siblings in `urban_panels`. |
+| 1.0.2   | October 8, 2020  | Added contributors                                                                 |
+| 1.0.3   | October 15, 2020 | Clarification of definition for `entertainment.recreational`                       |
 
 ## Getting Started
 
@@ -146,8 +149,8 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 | Child Category | Category Definition                             | Enumeration ID | String Value           |
 | -------------- | ----------------------------------------------- | -------------- | ---------------------- |
 | Billboards     | Located primarily on major roads, they attract high-density consumer exposure (mostly to vehicular traffic, but often to pedestrians). | 301 | outdoor.billboards |
-| Urban Panels   | Digital screens in urban environments, typically providing a public amenity. Typically visible to pedestrians and in some cases, vehicular traffic as well. | 302 | outdoor.billboards.urban\_panels  |
-| Bus Shelters   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of       | 303            | outdoor.billboards.bus\_shelters  |
+| Urban Panels   | Digital screens in urban environments, typically providing a public amenity. Typically visible to pedestrians and in some cases, vehicular traffic as well. | 302 | outdoor.urban\_panels  |
+| Bus Shelters   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of the enclosure.       | 303            | outdoor.bus\_shelters  |
 
 
 ### Health & Beauty
@@ -182,7 +185,7 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 | Child Category         | Category Definition                            | Enumeration ID | String Value             |
 | ---------------------- | ---------------------------------------------- | -------------- | ------------------------ |
-| Recreational Locations | An educational institution designed to provide learning spaces and learning environments for the teaching of students between K - 12 under the direction of teachers. | 801 | entertainment.recreational |
+| Recreational Locations | Location where recreational and/or leisure activities take place. | 801 | entertainment.recreational |
 | Movie Theaters         | An education institution designed for  instruction, examination, or both, of students in many branches of advanced learning, conferring degrees in various faculties, and often embodying colleges and similar institutions. | 802 | entertainment.movie\_theaters |
 | Sports Entertainment   | A venue that individuals or groups can play an active sport or activity.| 803 | entertainment.sports |
 | Bars                   | A retail business that serves alcoholic beverages. | 804 | entertainment.bars |

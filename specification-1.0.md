@@ -5,6 +5,16 @@ Digital Out-of-Home Screen Venue Types
 
 The intention of this document is to standardize the list of venue types that represent Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5 context. The systematization of DOOH venue types will allow for clearer targeting by media buying platforms across a spectrum of available supply-side platforms offering DOOH inventory.
 
+### Contributors
+
+* Adomni - Nicholas Babb
+* Broadsign - Matthew Mercuri
+* Place Exchange - Jason Shao
+* The Trade Desk - Alex Cohen
+* Verizon Media - M Wasfi
+* VIOOH - Jasleen Kaur
+* Vistar Media - Christian Collins
+
 ## Versioning
 
 | Version | Published        | Notes.                                                                             |

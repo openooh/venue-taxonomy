@@ -10,7 +10,7 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 
 Specification
 
-* [v1.0 Specification](./specification.md) [(PDF)](./DOOH%20Venue%20Type%20Spec.pdf)
+* [v1.0 Specification](./specification-1.0.md)
 
 Mapping to other taxonomies
 

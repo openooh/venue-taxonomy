@@ -243,10 +243,10 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Transit: Train Stations
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value                    |
-| ------------------- | ------------------- | -------------- | ------------------------------- |
-| Train               | TBC                 | 10601          | transit.train\_stations.train   |
-| Platform            | TBC                 | 10602          | transit.train\_station.platform |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                     |
+| ------------------- | ------------------- | -------------- | -------------------------------- |
+| Train               | TBC                 | 10601          | transit.train\_stations.train    |
+| Platform            | TBC                 | 10602          | transit.train\_stations.platform |
 
 ### Retail: Gas Stations
 

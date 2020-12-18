@@ -5,33 +5,17 @@ Digital Out-of-Home Screen Venue Types
 
 The intention of this document is to standardize the list of venue types that represent Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5 context. The systematization of DOOH venue types will allow for clearer targeting by media buying platforms across a spectrum of available supply-side platforms offering DOOH inventory.
 
-## Contributors
+### Contributors
 
-### About Broadsign
+* Adomni - Nicholas Babb
+* Broadsign - Matthew Mercuri
+* Place Exchange - Jason Shao
+* The Trade Desk - Alex Cohen
+* Verizon Media - M Wasfi
+* VIOOH - Jasleen Kaur
+* Vistar Media - Christian Collins
 
-Broadsign is making it easier than ever for media owners, agencies and brands to harness the power of out-of-home and connect with audiences across the globe. Powering over 425,000 signs in airports, shopping malls, health clinics, transit systems and more, Broadsign is at the heart of people’s lives. 
-
-The Broadsign platform helps media owners more efficiently manage their business operations while enabling brands and agencies to easily book OOH campaigns. The platform includes tools for content distribution, playback and proof of performance; sales inventory availability and proposal generation; automated programmatic DOOH transactions; and OOH business operations. 
-
-### About The Trade Desk
-
-The Trade Desk powers the most sophisticated buyers in advertising technology. Founded by the pioneers of real-time bidding, The Trade Desk has become the fastest growing demand-side platform in the industry by offering agencies, aggregators, and their advertisers best-in-class technology to manage display, social, mobile, video, audio, connected TV, and Digital-Out-of-Home advertising campaigns.
-
-The Trade Desk empowers buyers at the campaign level with the most expressive bid capabilities in market, full-funnel attribution, and detailed reporting that gives you more insights into your audience, from initial impression to conversion. By maintaining a pure buy-side focus, The Trade Desk delivers on branding and performance for clients worldwide.
-
-### About Vistar Media
-
-Vistar Media is the world’s leading end-to-end programmatic ecosystem for digital out-of-home (DOOH). Vistar Media’s demand-side platform (DSP) and supply-side platform (SSP) empower buyers and sellers to easily transact on DOOH inventory while applying intelligent data insights that improve media performance. Vistar’s SaaS solutions (unified ad server and Cortex for device and content management) deliver enterprise-grade solutions for monetizing and operating digital signage networks at any scale. Through its global reach, direct platform integrations, data partnerships, and complete technology stack, Vistar Media continues to power innovation and growth across the digital signage industry. Founded in 2012, Vistar Media is headquartered in New York City and has offices across the United States, Canada, the United Kingdom and Australia.
-
-### Individuals
-
-* Alex Cohen, The Trade Desk
-* Christian Collins, Vistar Media
-* Aura Koljonen, Broadsign
-* Eric Lamb, Vistar Media
-* Matthew Mercuri, Broadsign
-
-### Versioning
+## Versioning
 
 | Version | Published         | Notes.                                                                             |
 | ------- | ----------------- | ---------------------------------------------------------------------------------- |

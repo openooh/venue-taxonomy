@@ -33,12 +33,13 @@ Vistar Media is the world’s leading end-to-end programmatic ecosystem for digi
 
 ### Versioning
 
-| Version | Published        | Notes.                                                                             |
-| ------- | ---------------- | ---------------------------------------------------------------------------------- |
-| 1.0.0   | June 4, 2020     | Initial Release                                                                    |
-| 1.0.1   | August 4, 2020   | Typos in `bus_shelters`, and misassociation with child siblings in `urban_panels`. |
-| 1.0.2   | October 8, 2020  | Added contributors                                                                 |
-| 1.0.3   | October 15, 2020 | Clarification of definition for `entertainment.recreational`                       |
+| Version | Published         | Notes.                                                                             |
+| ------- | ----------------- | ---------------------------------------------------------------------------------- |
+| 1.0.0   | June 4, 2020      | Initial Release                                                                    |
+| 1.0.1   | August 4, 2020    | Typos in `bus_shelters`, and misassociation with child siblings in `urban_panels`. |
+| 1.0.2   | October 8, 2020   | Added contributors                                                                 |
+| 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                       |
+| 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                |
 
 ## Getting Started
 

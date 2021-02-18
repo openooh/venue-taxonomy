@@ -24,6 +24,7 @@ The intention of this document is to standardize the list of venue types that re
 | 1.0.2   | October 8, 2020   | Added contributors                                                                 |
 | 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                       |
 | 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                |
+| 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                  |
 
 ## Getting Started
 

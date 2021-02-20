@@ -24,6 +24,7 @@ The intention of this document is to standardize the list of venue types that re
 | 1.0.2   | October 8, 2020   | Added contributors                                                                 |
 | 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                       |
 | 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                |
+| 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                  |
 
 ## Getting Started
 
@@ -150,8 +151,8 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 | Child Category     | Category Definition                         | Enumeration ID | String Value              |
 | ------------------ | ------------------------------------------- | -------------- | ------------------------- |
-| Doctor’s Offices   | A club, building, or large room, usually containing special equipment, where people go to do physical exercise and get fit. | 501 | point\_care.doctor\_offices |
-| Veterinary Offices | An establishment where a hairdresser, beautician, or couturier conducts business. | 502 | point\_care.veterinary\_offices  |
+| Doctor’s Offices   | Non-hospital facility run by a physician - for treatment of people. | 501 | point\_care.doctor\_offices |
+| Veterinary Offices | Non-hopsital facility run by a veterinarian - for treatment of animals. | 502 | point\_care.veterinary\_offices  |
 
 ### Education
 

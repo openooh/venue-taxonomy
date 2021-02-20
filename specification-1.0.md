@@ -171,7 +171,7 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 | Child Category         | Category Definition                            | Enumeration ID | String Value             |
 | ---------------------- | ---------------------------------------------- | -------------- | ------------------------ |
 | Recreational Locations | Location where recreational and/or leisure activities take place. | 801 | entertainment.recreational |
-| Movie Theaters         | An education institution designed for  instruction, examination, or both, of students in many branches of advanced learning, conferring degrees in various faculties, and often embodying colleges and similar institutions. | 802 | entertainment.movie\_theaters |
+| Movie Theaters         | Location for displaying long-format content on large screens. | 802 | entertainment.movie\_theaters |
 | Sports Entertainment   | A venue that individuals or groups can play an active sport or activity.| 803 | entertainment.sports |
 | Bars                   | A retail business that serves alcoholic beverages. | 804 | entertainment.bars |
 | Casual Dining          | A restaurant that serves moderately priced food in a casual atmosphere. | 805 | entertainment.casual\_dining |

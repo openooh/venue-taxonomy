@@ -25,7 +25,7 @@ The intention of this document is to standardize the list of venue types that re
 | 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                       |
 | 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                |
 | 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                  |
-
+| 1.1.0   | March 31, 2021 | New Categories. Deprecated String values"                                             |
 ## Getting Started
 
 Digital Out-of-Home screens, available within a programmatic context, maintain specific geospatial and physical parameters that describe the conditions, environment and/or surroundings. These parameters provide a mutual understanding between buyer and seller within the bidstream and during the transaction phase of trading media.This specification clarifies and classifies these parameters to maintain knowledge equality within the DOOH programmatic industry for all parties involved.
@@ -250,11 +250,11 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Retail: Malls
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value             |
-| ------------------- | ------------------- | -------------- | ------------------------ |
-| Concourse           | TBC                 | 20501          | retail.malls.concourse   |
-| Food Court          | TBC                 | 20502          | retail.malls.food\_court |
-| Spectacular         | TBC                 | 20503          | retail.malls.spectacular |
+| Grandchild Category | Category Definition                                         | Enumeration ID | String Value             |
+| ------------------- | ----------------------------------------------------------- | -------------- | ------------------------ |
+| Concourse           | A large open area (including hallways and escalators)       | 20501          | retail.malls.concourse   |
+| Food Court          | A Common area with multiple food vendors and common tables. | 20502          | retail.malls.food\_court |
+| Spectacular         | Large and impactful screen(s) at a prime location. It often utilizes special embellishments. | 20503          | retail.malls.spectacular |
 
 ### Outdoor: Billboards
 

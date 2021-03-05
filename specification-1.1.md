@@ -104,7 +104,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Point of Care    | 5              | point_care                |
 | Education        | 6              | education                 |
 | Office Buildings | 7              | office_buildings          |
-| Entertainment    | 8              | entertainment             |
+| Leisure          | 8              | entertainment             |
 | Government       | 9              | government                |
 | Financial        | 10             | financial                 |
 | Residential      | 11             | residential               |
@@ -173,7 +173,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ---------------- | ------------------------------------------- | -------------- | ------------------------- |
 | Office Buildings | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.     | 701 | office\_buildings.office\_buildings |
 
-### Entertainment
+### Leisure
 
 | Child Category         | Category Definition                            | Enumeration ID | String Value (Deprecated) |
 | ---------------------- | ---------------------------------------------- | -------------- | ------------------------- |
@@ -295,7 +295,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Elevator            | TBC                 | 70101          | office\_buildings.office\_buildings.elevator |
 | Lobby               | TBC                 | 70102          | office\_buildings.office\_buildings.lobby |
 
-### Entertainment: Recreational Locations
+### Leisure: Recreational Locations
 
 | Grandchild Category   | Category Definition | Enumeration ID | String Value (Deprecated)           |
 | --------------------- | ------------------- | -------------- | ----------------------------------- |
@@ -303,21 +303,21 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Museums and Galleries | TBC                 | 80102          | entertainment.recreational.museums\_galleries |
 | Concert Venues        | TBC                 | 80103          | entertainment.recreational.concer\_venues    |
 
-### Entertainment: Movie Theaters
+### Leisure: Movie Theaters
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)           |
 | ------------------- | ------------------- | -------------- | ----------------------------------- |
 | Lobby               | TBC                 | 80201          | entertainment.movie\_theaters.lobby          |
 | Food Court          | TBC                 | 80202          | entertainment.movie\_theaters.food\_court    |
 
-### Entertainment: Sports Entertainment
+### Leisure: Sports Entertainment
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
 | Sport Arena         | TBC                 | 80301          | entertainment.sports.arena           |
 | Club House          | TBC                 | 80302          | entertainment.sports.club\_house     |
 
-### Entertainment: Hotels
+### Leisure: Hotels
 
 | Grandchild Category | Category Definition                                                     | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ----------------------------------------------------------------------- | -------------- | ------------------------------------ |

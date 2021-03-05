@@ -188,6 +188,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | QSR                    | A fast food restaurant, also known as a quick service restaurant within the industry, is a specific type of restaurant that serves fast-food cuisine and has minimal table service. | 806            | entertainment.qsr        |
 | Hotels                 | An establishment providing accommodations, means, and other services for travelers and tourists.                     | 807            | entertainment.hotels     |
 | Golf Carts             | A small motorized vehicle for golfers and their equipment.      | 808            | entertainment.golf\_cart |
+| Night Clubs            | An establishment for nighttime entertainment, typically serving drinks and offering music, dancing, etc.   | 809            | entertainment.night\_club |
 
 ### Government
 

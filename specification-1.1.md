@@ -119,7 +119,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Child Category       | Category Definition                            | Enumeration ID | String Value (Deprecated)  |
 | -------------------- | ---------------------------------------------- | -------------- | -------------------------- |
 | Airports             | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges.                                                                     | 101 | transit.airports |
-| Buses                | Displays located on the inside of city or intercity buses.         | 102 | transit.buses |
+| Buses                | Displays located on or in city or intercity buses.         | 102 | transit.buses |
 | Taxi & Rideshare TV  | Advertising displays placed inside taxis and rideshare vehicles visible to passengers in the back seat. | 103 | transit.taxi\_rideshare\_tv |
 | Taxi & Rideshare Top | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers. | 104 | transit.taxi\_rideshare\_top |
 | Subway               | Advertising displays placed inside subway trains or inside stations or on subway platforms. | 105 | transit.subway |
@@ -228,10 +228,12 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Transit: Buses
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated) |
-| ------------------- | ------------------- | -------------- | ------------------------- |
-| Bus                 | TBC                 | 10201          | transit.buses.bus         |
-| Terminal            | TBC                 | 10202          | transit.buses.terminal    |
+| Grandchild Category | Category Definition                                                       | Enumeration ID | String Value (Deprecated) |
+| ------------------- | ------------------------------------------------------------------------- | -------------- | ------------------------- |
+| Bus (Inside)        | Advertising inside a bus, primarily visible to bus passengers             | 10201          | transit.buses.bus         |
+| Terminal            | Advertising at facilities for embarking or disembarking from a bus        | 10202          | transit.buses.terminal    |
+| Bus (Outside)       | Advertising outside a bus, primarily visible to people not riding the bus | 10202          | transit.buses.terminal    |
+
 
 ### Transit: Subway
 

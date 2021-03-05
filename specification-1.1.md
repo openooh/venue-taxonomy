@@ -187,10 +187,12 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Government
 
-| Child Category | Category Definition                             | Enumeration ID | String Value (Deprecated) |
-| -------------- | ----------------------------------------------- | -------------- | ------------------------- |
-| DMVs           | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.         | 901            | government.dmv         |
-| Military Bases | A facility that houses and facilitates training for military personnel and operations. | 902            | government.military\_bases |
+| Child Category | Category Definition                                                                                        | Enumeration ID | String Value (Deprecated) |
+| -------------- | ---------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- |
+| DMVs           | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.                          | 901            | government.dmv         |
+| Military Bases | A facility that houses and facilitates training for military personnel and operations.                     | 902            | government.military\_bases |
+| Post Offices   | A facility that handles the receipt, delivery, and processing of mail, packages, or other postal services. | 903            | government.postal |
+
 
 ### Financial
 

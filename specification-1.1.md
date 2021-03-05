@@ -284,6 +284,14 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Lobby               | TBC                 | 40101          | health\_beauty.gyms.lobby.     |
 | Fitness Equipment   | TBC                 | 40102          | health\_beauty.gyms.equipment  |
 
+### Health and Beauty: Salons
+
+| Grandchild Category  | Category Definition                      | Enumeration ID | String Value (Deprecated).     |
+| -------------------- | ---------------------------------------- | -------------- | ------------------------------ |
+| Unisex Salon         | Salon catering to clients of any sex     | 40201          | health\_beauty.gyms.lobby.     |
+| Men's Salon          | Salon primarily catering towards men     | 40202          | health\_beauty.gyms.equipment  |
+| Women's Salon        | Salon primarily catering towards women   | 40202          | health\_beauty.gyms.equipment  |
+
 ### Education: Colleges and Universities
 
 | Grandchild Category.  | Category Definition                                    | Enumeration ID | String Value (Deprecated)               |

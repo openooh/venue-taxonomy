@@ -73,7 +73,10 @@ In terms of placing venue types, this specification suggests placing venue type 
 * `device.ext.dooh.venuetypeid`
 * `device.ext.dooh.venuetypestring` (Deprecated as of 1.1, will be removed in 1.4)
 
-Note: The values represented in file exports, or `bid_request` should identify the single (best) venue describing the the context and surroundings for where advertising will display. In the event there are multiple classifications in the taxonomy that could apply, media owners should choose the single value most likely to match advertisers expectations.
+### Implementation Notes:
+
+* The values represented in file exports, or `bid_request` should identify the single (best) venue describing the the context and surroundings for where advertising will display. In the event there are multiple classifications in the taxonomy that could apply, media owners should choose the single value most likely to match advertisers expectations.
+* DSPs receiving bid_reqeusts with unknown categories (e.g. from an SSP sending categories from a more recent version of the specification) should process the `bid_request` as if the category was not present. In the case of a `bid_request` passing only `venuetypeid` this would be equivalent to a request with no defined venue category. In the event of a request with `venuetypelist`, if some of the categories in the hierarchy are known, this would be equivalent to a request with just the known parent categories passed (e.g. [`leisure`, `unknown category`] would be interpreted as equivalent to [`leisure`]
 
 ## Value Format
 

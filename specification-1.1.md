@@ -255,10 +255,11 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Retail: Grocery
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)     |
-| ------------------- | ------------------- | -------------- | ----------------------------- |
-| Shop Entrance       | TBC                 | 20301          | retail.grocery.shop\_entrance |
-| Check Out           | TBC                 | 20302          | retail.grocery.check\_out     |
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Shop Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20301          | retail.grocery.shop\_entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 20302          | retail.grocery.check\_out     |
+| Ailes               | Areas primarily dedicated to the display or retrieval of goods                  | 20302          | retail.grocery.check\_out     |
 
 ### Retail: Malls
 

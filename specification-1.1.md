@@ -276,6 +276,15 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Lobby               | TBC                 | 40101          | health\_beauty.gyms.lobby.     |
 | Fitness Equipment   | TBC                 | 40102          | health\_beauty.gyms.equipment  |
 
+### Education: Colleges and Universities
+
+| Grandchild Category.  | Category Definition                                    | Enumeration ID | String Value (Deprecated)               |
+| --------------------- | ------------------------------------------------------ | -------------- | --------------------------------------- |
+| Residences            | Places where faculty or students live                  | 60101          | office\_buildings.office\_buildings.elevator |
+| Common Areas          | Shared spaces for study, dining, or leisure activities | 60102          | office\_buildings.office\_buildings.lobby |
+| Athletic Facilities   | Facillities or stadiums for sporting competition       | 60103          | office\_buildings.office\_buildings.lobby |
+
+
 ### Office Buildings: Office Buildings
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)               |

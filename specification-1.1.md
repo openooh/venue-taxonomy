@@ -202,29 +202,29 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Financial
 
-| Child Category | Category Definition                           | Enumeration Value | String Value (Deprecated) |
-| -------------- | --------------------------------------------- | ----------------- | ------------------------- |
-| Banks          | A bank is a financial institution licensed to | 1001              | financial.banks           |
+| Child Category | Category Definition                                                                | Enumeration Value | String Value (Deprecated) |
+| -------------- | ---------------------------------------------------------------------------------- | ----------------- | ------------------------- |
+| Banks          | A bank is a financial institution licensed to store or invest accountholders money | 1001              | financial.banks           |
 
 ### Residential
 
-| Child Category                       | Category Definition                            | Enumeration Value | String Value (Deprecated) |
-| ------------------------------------ | ---------------------------------------------- | ----------------- | ------------------------- |
-| Apartment Buildings and Condominiums | A building that contains different residential | 1101              | residential.apartment     |
+| Child Category                       | Category Definition                                  | Enumeration Value | String Value (Deprecated) |
+| ------------------------------------ | ---------------------------------------------------- | ----------------- | ------------------------- |
+| Apartment Buildings and Condominiums | A building that contains different residential units | 1101              | residential.apartment     |
 
 ## Grandchild Categories & IDs
 
 ### Transit: Airports
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)              |
-| ------------------- | ------------------- | -------------- | -------------------------------------- |
-| Arrival Hall        | TBC                 | 10101          | transit.airports.arrivals\_hall        |
-| Baggage Claim       | TBC                 | 10102          | transit.airports.baggage\_claim        |
-| Departures Hall     | TBC                 | 10103          | transit.airports.departures\_hall      |
-| Food Court          | TBC                 | 10104          | transit.airports.food\_court           |
-| Gates               | TBC                 | 10105          | transit.airports.gates                 |
-| Lounges             | TBC                 | 10106          | transit.airports.lounges               |
-| Shopping Area       | TBC                 | 10107          | transit.airports.shopping\_area        |
+| Grandchild Category | Category Definition                                                           | Enumeration ID | String Value (Deprecated)              |
+| ------------------- | ----------------------------------------------------------------------------- | -------------- | -------------------------------------- |
+| Arrival Hall        | Locations for meeting passengers arriving on flights                          | 10101          | transit.airports.arrivals\_hall        |
+| Baggage Claim       | Locations to retrieve baggage not carried during a flight                     | 10102          | transit.airports.baggage\_claim        |
+| Departures Hall     | Location for dropping off passengers leaving on flights                       | 10103          | transit.airports.departures\_hall      |
+| Food Court          | Location within an airport for food, typically casual                         | 10104          | transit.airports.food\_court           |
+| Gates               | Location to wait for or embark or disembark from a specific plane             | 10105          | transit.airports.gates                 |
+| Lounges             | (typically private) places to wait for flights, separate from public spaces   | 10106          | transit.airports.lounges               |
+| Shopping Area       | Retail areas contained within facilities primarily used for servicing flights | 10107          | transit.airports.shopping\_area        |
 
 ### Transit: Buses
 
@@ -237,17 +237,17 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Transit: Subway
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated) |
-| ------------------- | ------------------- | -------------- | ------------------------- |
-| Subway Train        | TBC                 | 10501          | transit.subway.train      |
-| Platform            | TBC                 | 10502          | transit.subway.platform   |
+| Grandchild Category | Category Definition                                                 | Enumeration ID | String Value (Deprecated) |
+| ------------------- | ------------------------------------------------------------------- | -------------- | ------------------------- |
+| Subway Train        | A (typical municipal area) train that travels primarily underground | 10501          | transit.subway.train      |
+| Platform            | Areas to wait for, board, or unboard a subway                       | 10502          | transit.subway.platform   |
 
 ### Transit: Train Stations
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)        |
-| ------------------- | ------------------- | -------------- | -------------------------------- |
-| Train               | TBC                 | 10601          | transit.train\_stations.train    |
-| Platform            | TBC                 | 10602          | transit.train\_stations.platform |
+| Grandchild Category | Category Definition                                          | Enumeration ID | String Value (Deprecated)        |
+| ------------------- | ------------------------------------------------------------ | -------------- | -------------------------------- |
+| Train               | A train that travels primarily above ground, on rails\       | 10601          | transit.train\_stations.train    |
+| Platform            | Areas to wait for, board, or unboard a train                 | 10602          | transit.train\_stations.platform |
 
 ### Retail: Gas Stations
 
@@ -274,18 +274,18 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Outdoor: Billboards
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)       |
-| ------------------- | ------------------- | -------------- | ------------------------------- |
-| Roadside            | TBC                 | 30101          | outdoor.billboards.roadside     |
-| Highway             | TBC                 | 30102          | outdoor.billboards.highway      |
-| Spectacular         | TBC                 | 30103          | outdoor.billboards.spectacular  |
+| Grandchild Category | Category Definition                                                                                         | Enumeration ID | String Value (Deprecated)       |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------- |
+| Roadside            | Primarily vehicular environments                                                                            | 30101          | outdoor.billboards.roadside     |
+| Highway             | High-speed vehicular environments, typically with controlled entrance/exit (e.g. "exits" or "interchanges") | 30102          | outdoor.billboards.highway      |
+| Spectacular         | A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 30103          | outdoor.billboards.spectacular  |
 
 ### Health and Beauty: Gyms
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated).     |
-| ------------------- | ------------------- | -------------- | ------------------------------ |
-| Lobby               | TBC                 | 40101          | health\_beauty.gyms.lobby.     |
-| Fitness Equipment   | TBC                 | 40102          | health\_beauty.gyms.equipment  |
+| Grandchild Category | Category Definition                                                           | Enumeration ID | String Value (Deprecated).     |
+| ------------------- | ----------------------------------------------------------------------------- | -------------- | ------------------------------ |
+| Lobby               | Area for waiting or meeting guests                                            | 40101          | health\_beauty.gyms.lobby.     |
+| Fitness Equipment   | Area primarily for exercise or the usage of fitness equipment                 | 40102          | health\_beauty.gyms.equipment  |
 
 ### Health and Beauty: Salons
 
@@ -308,23 +308,24 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)               |
 | ------------------- | ------------------- | -------------- | --------------------------------------- |
-| Elevator            | TBC                 | 70101          | office\_buildings.office\_buildings.elevator |
-| Lobby               | TBC                 | 70102          | office\_buildings.office\_buildings.lobby |
+| Elevator            | Enclosed, Vertical conveyance for people and goods                 | 70101          | office\_buildings.office\_buildings.elevator |
+| Lobby               | Common space for tenants to meet and greet visitors and guests, typically near entrances                 | 70102          | office\_buildings.office\_buildings.lobby |
 
 ### Leisure: Recreational Locations
 
 | Grandchild Category   | Category Definition | Enumeration ID | String Value (Deprecated)           |
 | --------------------- | ------------------- | -------------- | ----------------------------------- |
-| Theme Parks           | TBC                 | 80101          | entertainment.recreational.theme\_parks |
-| Museums and Galleries | TBC                 | 80102          | entertainment.recreational.museums\_galleries |
-| Concert Venues        | TBC                 | 80103          | entertainment.recreational.concer\_venues    |
+| Theme Parks           | An amusement park with a unifying setting or idea.               | 80101          | entertainment.recreational.theme\_parks |
+| Museums and Galleries | A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited. e.g. 
+"the Museum of Modern Art"                 | 80102          | entertainment.recreational.museums\_galleries |
+| Concert Venues        | Any location used for a concert or musical performance                | 80103          | entertainment.recreational.concer\_venues    |
 
 ### Leisure: Movie Theaters
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)           |
 | ------------------- | ------------------- | -------------- | ----------------------------------- |
-| Lobby               | TBC                 | 80201          | entertainment.movie\_theaters.lobby          |
-| Food Court          | TBC                 | 80202          | entertainment.movie\_theaters.food\_court    |
+| Lobby               | A corridor or hall connected with a larger room or series of rooms and used as a passageway or waiting room: such as a large hall serving as a foyer (as of a hotel or theater)                 | 80201          | entertainment.movie\_theaters.lobby          |
+| Food Court          | An area within a building (such as a shopping mall) set apart for food concessions.                 | 80202          | entertainment.movie\_theaters.food\_court    |
 
 ### Leisure: Sports Entertainment
 
@@ -345,8 +346,8 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
-| Lobby               | TBC                 | 110101         | residential.apartment\_buildings.lobby         |
-| Elevator            | TBC                 | 110102         | residential.apartment\_buildings.elevator      |
+| Lobby               | A corridor or hall connected with a larger room or series of rooms and used as a passageway or waiting room: such as a large hall serving as a foyer (as of a hotel or theater)                 | 110101         | residential.apartment\_buildings.lobby         |
+| Elevator            | Enclosed, Vertical conveyance for people and goods                   | 110102         | residential.apartment\_buildings.elevator      |
 
 # Specification Expansion & Amendment Process
 

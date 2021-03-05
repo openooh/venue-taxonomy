@@ -316,8 +316,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Grandchild Category   | Category Definition | Enumeration ID | String Value (Deprecated)           |
 | --------------------- | ------------------- | -------------- | ----------------------------------- |
 | Theme Parks           | An amusement park with a unifying setting or idea.               | 80101          | entertainment.recreational.theme\_parks |
-| Museums and Galleries | A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited. e.g. 
-"the Museum of Modern Art"                 | 80102          | entertainment.recreational.museums\_galleries |
+| Museums and Galleries | A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited. e.g. "the Museum of Modern Art"                 | 80102          | entertainment.recreational.museums\_galleries |
 | Concert Venues        | Any location used for a concert or musical performance                | 80103          | entertainment.recreational.concer\_venues    |
 
 ### Leisure: Movie Theaters

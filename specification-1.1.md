@@ -307,10 +307,11 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Entertainment: Hotels
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
-| ------------------- | ------------------- | -------------- | ------------------------------------ |
-| Lobby               | TBC                 | 80701          | entertainment.hotels.lobby           |
-| Elevator            | TBC                 | 80702          | entertainment.hotels.elevator        |
+| Grandchild Category | Category Definition                                                     | Enumeration ID | String Value (Deprecated)            |
+| ------------------- | ----------------------------------------------------------------------- | -------------- | ------------------------------------ |
+| Lobby               | Commonly accessible shared spaces for guests at a hotel                 | 80701          | entertainment.hotels.lobby           |
+| Elevator            | Commonly accessible, enclosed spaces used to move between floors.       | 80702          | entertainment.hotels.elevator        |
+| Room                | Locations occupied and restricted to a single guest                     | 80703          | entertainment.hotels.room            |
 
 ### Residential: Apartment Buildings and Condominiums
 

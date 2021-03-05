@@ -200,9 +200,9 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Residential
 
-| Child Category      | Category Definition                            | Enumeration Value | String Value (Deprecated) |
-| ------------------- | ---------------------------------------------- | ----------------- | ------------------------- |
-| Apartment Buildings | A building that contains different residential | 1101              | residential.apartment     |
+| Child Category                       | Category Definition                            | Enumeration Value | String Value (Deprecated) |
+| ------------------------------------ | ---------------------------------------------- | ----------------- | ------------------------- |
+| Apartment Buildings and Condominiums | A building that contains different residential | 1101              | residential.apartment     |
 
 ## Grandchild Categories & IDs
 
@@ -312,7 +312,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Lobby               | TBC                 | 80701          | entertainment.hotels.lobby           |
 | Elevator            | TBC                 | 80702          | entertainment.hotels.elevator        |
 
-### Residential: Apartment Buildings
+### Residential: Apartment Buildings and Condominiums
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ------------------- | -------------- | ------------------------------------ |

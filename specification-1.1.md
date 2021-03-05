@@ -248,10 +248,10 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Retail: Gas Stations
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)  |
-| ------------------- | ------------------- | -------------- | -------------------------- |
-| Pump                | TBC                 | 20101          | retail.gas\_stations.pump  |
-| Shop                | TBC                 | 20102          | retail.gas\_stations.shop  |
+| Grandchild Category | Category Definition                                                              | Enumeration ID | String Value (Deprecated)  |
+| ------------------- | -------------------------------------------------------------------------------- | -------------- | -------------------------- |
+| Fuel Dispenser      | A (typically self-service) device for dispensing fuel to vehicles.               | 20101          | retail.gas\_stations.pump  |
+| Shop                | A store attached to a location who's primary audience if people fueling vehicles | 20102          | retail.gas\_stations.shop  |
 
 ### Retail: Grocery
 

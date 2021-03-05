@@ -39,7 +39,7 @@ A venue type should also describe a media format, except when the media format c
 
 Screen venue types should not obscure key elements of the environment. 
 
-Venue types should not equate environments that serve dramatically different purposes. For example, it would be insincere to label both Marijuana dispensaries AND pharmacies under the “Wellness” category. These two environments serve very different purposes and audiences, and thus cannot be grouped together.
+Venue types should not equate environments that serve dramatically different purposes. For example, it would be insincere to label both Cannabis dispensaries AND pharmacies under the “Wellness” category. These two environments serve very different purposes and audiences, and thus cannot be grouped together.
 
 ### Information Tiers
 
@@ -128,16 +128,16 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Retail
 
-| Child Category     | Category Definition                             | Enumeration ID | String Value (Deprecated)|
-| ------------------ | ----------------------------------------------- | -------------- | ------------------------ |
-| Gas Stations       | An establishment beside a road selling fuel for motor vehicles. | 201 | retail.gas\_stations |
-| Convenience Stores | A store with extended opening hours and in a convenient location, stocking a limited range of household goods and groceries. | 202 | retail.convenience\_store |
-| Grocery            | A retail shop that primarily sells food, either fresh or preserved. | 203 | retail.grocery |
-| Liquor Stores      | A retail shop that predominantly sells prepackaged alcoholic beverages, typically in bottles, intended to be consumed off the store’s premises. | 204 | retail.liquor\_stores |
-| Mall               | A large building or series of connected buildings containing a variety of retail stores and typically also restaurants. | 205 | retail.malls |
-| Dispensaries       | A store that sells and dispenses medicinal marijuana and CBD products. | 206 | retail.dispensaries |
-| Pharmacies         | A store where medicinal drugs are dispensed and sold. | 207 | retail.pharmacies |
-| Parking Garages    | A building in which people usually pay to park their cars, trucks and other vehicles. | 208 | retail.parking\_garages |
+| Child Category        | Category Definition                             | Enumeration ID | String Value (Deprecated)|
+| --------------------- | ----------------------------------------------- | -------------- | ------------------------ |
+| Gas Stations          | An establishment beside a road selling fuel for motor vehicles. | 201 | retail.gas\_stations |
+| Convenience Stores    | A store with extended opening hours and in a convenient location, stocking a limited range of household goods and groceries. | 202 | retail.convenience\_store |
+| Grocery               | A retail shop that primarily sells food, either fresh or preserved. | 203 | retail.grocery |
+| Liquor Stores         | A retail shop that predominantly sells prepackaged alcoholic beverages, typically in bottles, intended to be consumed off the store’s premises. | 204 | retail.liquor\_stores |
+| Mall                  | A large building or series of connected buildings containing a variety of retail stores and typically also restaurants. | 205 | retail.malls |
+| Cannabis Dispensaries | A store that sells and dispenses cannabis and CBD products. | 206 | retail.dispensaries |
+| Pharmacies            | A store where medicinal drugs are dispensed and sold. | 207 | retail.pharmacies |
+| Parking Garages       | A building in which people usually pay to park their cars, trucks and other vehicles. | 208 | retail.parking\_garages |
 
 ### Outdoor
 

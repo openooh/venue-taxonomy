@@ -69,9 +69,11 @@ Venues can be assigned to a grandchild but are optional and at the purview of th
 
 In terms of placing venue types, this specification suggests placing venue type information in the device object of an OpenRTB 2.5 `bid_request`. The path would lead into an extension and a subsequent dooh object. The declaration of format is implicit to one the following formats:
 
-* `device.ext.dooh.venuetypelist`
+* `device.ext.dooh.venuetypelist` (equivalent to `venuetypeid` and any parent-categories of the chosen venue)
 * `device.ext.dooh.venuetypeid`
 * `device.ext.dooh.venuetypestring` (Deprecated as of 1.1, will be removed in 1.4)
+
+Note: The values represented in file exports, or `bid_request` should identify the single (best) venue describing the the context and surroundings for where advertising will display. In the event there are multiple classifications in the taxonomy that could apply, media owners should choose the single value most likely to match advertisers expectations.
 
 ## Value Format
 

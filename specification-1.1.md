@@ -189,6 +189,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Hotels                 | An establishment providing accommodations, means, and other services for travelers and tourists.                     | 807            | entertainment.hotels     |
 | Golf Carts             | A small motorized vehicle for golfers and their equipment.      | 808            | entertainment.golf\_cart |
 | Night Clubs            | An establishment for nighttime entertainment, typically serving drinks and offering music, dancing, etc.   | 809            | entertainment.night\_club |
+| High-End Dining        |  A restaurant that serves expensive food. Often in a more formal atmosphere, and accepting or requiring reservations | 809            | entertainment.high\_end\_dining |
 
 ### Government
 

@@ -17,15 +17,15 @@ The intention of this document is to standardize the list of venue types that re
 
 ## Versioning
 
-| Version | Published         | Notes.                                                                                |
-| ------- | ----------------- | ------------------------------------------------------------------------------------- |
-| 1.0.0   | June 4, 2020      | Initial Release                                                                       |
-| 1.0.1   | August 4, 2020    | Typos in `bus_shelters`, and misassociation with child siblings in `urban_panels`.    |
-| 1.0.2   | October 8, 2020   | Added contributors                                                                    |
-| 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                          |
-| 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                   |
-| 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                     |
-| 1.1.0   | March 31, 2021 | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
+| Version | Published         | Notes                                                                                    |
+| ------- | ----------------- | ---------------------------------------------------------------------------------------- |
+| 1.0.0   | June 4, 2020      | Initial Release                                                                          |
+| 1.0.1   | August 4, 2020    | Typos in `bus_shelters`, and misassociation with child siblings in `urban_panels`.       |
+| 1.0.2   | October 8, 2020   | Added contributors                                                                       |
+| 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                             |
+| 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                      |
+| 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                        |
+| 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
 
 ## Getting Started
 
@@ -75,8 +75,11 @@ In terms of placing venue types, this specification suggests placing venue type 
 
 ### Implementation Notes:
 
-* The values represented in file exports, or `bid_request` should identify the single (best) venue describing the the context and surroundings for where advertising will display. In the event there are multiple classifications in the taxonomy that could apply, media owners should choose the single value most likely to match advertisers expectations.
-* DSPs receiving bid_reqeusts with unknown categories (e.g. from an SSP sending categories from a more recent version of the specification) should process the `bid_request` as if the category was not present. In the case of a `bid_request` passing only `venuetypeid` this would be equivalent to a request with no defined venue category. In the event of a request with `venuetypelist`, if some of the categories in the hierarchy are known, this would be equivalent to a request with just the known parent categories passed (e.g. [`leisure`, `unknown category`] would be interpreted as equivalent to [`leisure`]
+The values represented in file exports, or `bid_request` should identify the single (best) venue describing the the context and surroundings for where advertising will display. In the event there are multiple classifications in the taxonomy that could apply, media owners should choose the single value most likely to match advertisers expectations.
+
+DSPs receiving bid_reqeusts with unknown categories (e.g. from an SSP sending categories from a more recent version of the specification) should process the `bid_request` as if the category was not present. 
+* In the case of a `bid_request` passing only `venuetypeid` this would be equivalent to a request with no defined venue category.
+* In the event of a request with `venuetypelist`, if some of the categories in the hierarchy are known, this would be equivalent to a request with just the known parent categories passed (e.g. [`leisure`, `unknown category`] would be interpreted as equivalent to [`leisure`]
 
 ## Value Format
 
@@ -119,7 +122,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Child Category       | Category Definition                            | Enumeration ID | String Value (Deprecated)  |
 | -------------------- | ---------------------------------------------- | -------------- | -------------------------- |
 | Airports             | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges.                                                                     | 101 | transit.airports |
-| Buses                | Displays located on or in city or intercity buses.         | 102 | transit.buses |
+| Buses                | Displays located on or in city or intercity buses.                 | 102 | transit.buses |
 | Taxi & Rideshare TV  | Advertising displays placed inside taxis and rideshare vehicles visible to passengers in the back seat. | 103 | transit.taxi\_rideshare\_tv |
 | Taxi & Rideshare Top | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers. | 104 | transit.taxi\_rideshare\_top |
 | Subway               | Advertising displays placed inside subway trains or inside stations or on subway platforms. | 105 | transit.subway |
@@ -189,7 +192,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Hotels                 | An establishment providing accommodations, means, and other services for travelers and tourists.                     | 807            | entertainment.hotels     |
 | Golf Carts             | A small motorized vehicle for golfers and their equipment.      | 808            | entertainment.golf\_cart |
 | Night Clubs            | An establishment for nighttime entertainment, typically serving drinks and offering music, dancing, etc.   | 809            | entertainment.night\_club |
-| High-End Dining        |  A restaurant that serves expensive food. Often in a more formal atmosphere, and accepting or requiring reservations | 809            | entertainment.high\_end\_dining |
+| High-End Dining        |  A restaurant that serves expensive food. Often in a more formal atmosphere, and accepting or requiring reservations | 810            | entertainment.high\_end\_dining |
 
 ### Government
 
@@ -232,7 +235,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | ------------------------------------------------------------------------- | -------------- | ------------------------- |
 | Bus (Inside)        | Advertising inside a bus, primarily visible to bus passengers             | 10201          | transit.buses.bus         |
 | Terminal            | Advertising at facilities for embarking or disembarking from a bus        | 10202          | transit.buses.terminal    |
-| Bus (Outside)       | Advertising outside a bus, primarily visible to people not riding the bus | 10202          | transit.buses.terminal    |
+| Bus (Outside)       | Advertising outside a bus, primarily visible to people not riding the bus | 10203          | transit.buses.bus_outside |
 
 
 ### Transit: Subway
@@ -262,7 +265,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
 | Shop Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20301          | retail.grocery.shop\_entrance |
 | Check Out           | Areas primarily dedicated to paying for purchased goods                         | 20302          | retail.grocery.check\_out     |
-| Ailes               | Areas primarily dedicated to the display or retrieval of goods                  | 20302          | retail.grocery.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 20303          | retail.grocery.aisles        |
 
 ### Retail: Malls
 
@@ -291,24 +294,24 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 | Grandchild Category  | Category Definition                      | Enumeration ID | String Value (Deprecated).     |
 | -------------------- | ---------------------------------------- | -------------- | ------------------------------ |
-| Unisex Salon         | Salon catering to clients of any sex     | 40201          | health\_beauty.gyms.lobby.     |
-| Men's Salon          | Salon primarily catering towards men     | 40202          | health\_beauty.gyms.equipment  |
-| Women's Salon        | Salon primarily catering towards women   | 40202          | health\_beauty.gyms.equipment  |
+| Unisex Salon         | Salon catering to clients of any sex     | 40201          | health\_beauty.salons.unisex   |
+| Men's Salon          | Salon primarily catering towards men     | 40202          | health\_beauty.salons.mens     |
+| Women's Salon        | Salon primarily catering towards women   | 40203          | health\_beauty.salons.womens   |
 
 ### Education: Colleges and Universities
 
 | Grandchild Category.  | Category Definition                                    | Enumeration ID | String Value (Deprecated)               |
 | --------------------- | ------------------------------------------------------ | -------------- | --------------------------------------- |
-| Residences            | Places where faculty or students live                  | 60101          | office\_buildings.office\_buildings.elevator |
-| Common Areas          | Shared spaces for study, dining, or leisure activities | 60102          | office\_buildings.office\_buildings.lobby |
-| Athletic Facilities   | Facillities or stadiums for sporting competition       | 60103          | office\_buildings.office\_buildings.lobby |
+| Residences            | Places where faculty or students live                  | 60101          | education.colleges.residences           |
+| Common Areas          | Shared spaces for study, dining, or leisure activities | 60102          | education.colleges.common               |
+| Athletic Facilities   | Facillities or stadiums for sporting competition       | 60103          | education.colleges.athletics            |
 
 
 ### Office Buildings: Office Buildings
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)               |
-| ------------------- | ------------------- | -------------- | --------------------------------------- |
-| Elevator            | Enclosed, Vertical conveyance for people and goods                 | 70101          | office\_buildings.office\_buildings.elevator |
+| Grandchild Category | Category Definition                                                                                      | Enumeration ID | String Value (Deprecated)               |
+| ------------------- | -------------------------------------------------------------------------------------------------------- | -------------- | --------------------------------------- |
+| Elevator            | Enclosed, Vertical conveyance for people and goods                                                       | 70101          | office\_buildings.office\_buildings.elevator |
 | Lobby               | Common space for tenants to meet and greet visitors and guests, typically near entrances                 | 70102          | office\_buildings.office\_buildings.lobby |
 
 ### Leisure: Recreational Locations
@@ -317,7 +320,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | --------------------- | ------------------- | -------------- | ----------------------------------- |
 | Theme Parks           | An amusement park with a unifying setting or idea.               | 80101          | entertainment.recreational.theme\_parks |
 | Museums and Galleries | A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited. e.g. "the Museum of Modern Art"                 | 80102          | entertainment.recreational.museums\_galleries |
-| Concert Venues        | Any location used for a concert or musical performance                | 80103          | entertainment.recreational.concer\_venues    |
+| Concert Venues        | Any location used for a concert or musical performance                | 80103          | entertainment.recreational.concert\_venues    |
 
 ### Leisure: Movie Theaters
 
@@ -330,8 +333,8 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
-| Sport Arena         | TBC                 | 80301          | entertainment.sports.arena           |
-| Club House          | TBC                 | 80302          | entertainment.sports.club\_house     |
+| Sport Arena         | A central area used for sports or other forms of entertainment and surrounded by seats for spectators. | 80301          | entertainment.sports.arena           |
+| Club House          | Locker rooms used by an athletic team                 | 80302          | entertainment.sports.club\_house     |
 
 ### Leisure: Hotels
 

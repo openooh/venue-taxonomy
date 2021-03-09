@@ -18,17 +18,22 @@ Mapping to other taxonomies
 
 ## Specification Working Group
 
-* Adomni
-* Broadsign
-* Place Exchange
-* The Trade Desk
-* Verizon Media
-* VIOOH
-* Vistar Media
+* Aura Koljonen (Broadsign)
+* Bruno Guerrero (Hivestack)
+* [Christian Collins](https://github.com/christiancollins11) (Vistar)
+* Connor Peltz (Broadsign)
+* [Jasleen Kaur](https://github.com/jasleenk-viooh) (VIOOH)
+* [Jason Shao](https://github.com/jayshao) (Place Exchange)
+* Joshua Berg (MediaMath)
+* [M. Wasfi](https://github.com/mowasfi7) (Verizon)
+* Matthew Mercuri (Samsung)
+* [Nicholas Babb](https://github.com/ndbabb) (Adomni)
+* Sweta Vasudevan (Place Exchange)
+* William Hartley-Booth (The Trade Desk)
 
 ## Adoption
 
-| Participant | Status | Version | Notes |
+| Platform | Status | Version | Notes |
 | ----------- | ------ | ------- | ----- |
 | Adomni | Evaluating | 1.0 |  |
 | Broadsign | Production | 1.0 | Supports OpenOOH v1.0.0 as of 8/3/20 |

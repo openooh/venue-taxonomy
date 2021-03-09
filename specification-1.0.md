@@ -1,21 +1,14 @@
-Digital Out-of-Home Screen Venue Types
-====
+# Digital Out-of-Home Screen Venue Types
 
-## Introduction
+The intention of this document is to standardize a taxonomy of venue types that represent Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5 context. The systematization of DOOH venue types will allow for clearer targeting by media buying platforms across a spectrum of available supply-side platforms offering DOOH inventory.
 
-The intention of this document is to standardize the list of venue types that represent Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5 context. The systematization of DOOH venue types will allow for clearer targeting by media buying platforms across a spectrum of available supply-side platforms offering DOOH inventory.
+## Versioning & Amendment Process
 
-### Contributors
+This specification, written by the contributing parties, is not exhaustive and amenable to changes based on feedback from new participants. However, to facilitate adoption between adopting parties, the frequency of changes shall be maintained on a cadence that respects the level of effort required by currently-integrated parties.
 
-* Adomni - Nicholas Babb
-* Broadsign - Matthew Mercuri
-* Place Exchange - Jason Shao
-* The Trade Desk - Alex Cohen
-* Verizon Media - M Wasfi
-* VIOOH - Jasleen Kaur
-* Vistar Media - Christian Collins
+Every attempt will be made to version changes to this specification consistent with [Semantic Versioning](https://semver.org/), with MINOR releases expected on a quarterly cadence. PATCH releases or addressing errata in the specfication will released as needed.
 
-## Versioning
+### Version History
 
 | Version | Published         | Notes                                                                                    |
 | ------- | ----------------- | ---------------------------------------------------------------------------------------- |
@@ -26,6 +19,10 @@ The intention of this document is to standardize the list of venue types that re
 | 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                      |
 | 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                        |
 | 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
+
+### Reporting Issues
+
+Issues, Feature Requests, and Bug Reports should be filed as Github Issues in [this project](https://github.com/openooh/venue-taxonomy/issues) and will be reviewed regularly by spec committee members. Parties interested in participating more actively in the specification development process should reach out in 
 
 ## Getting Started
 
@@ -202,7 +199,6 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Military Bases | A facility that houses and facilitates training for military personnel and operations.                     | 902            | government.military\_bases |
 | Post Offices   | A facility that handles the receipt, delivery, and processing of mail, packages, or other postal services. | 903            | government.postal |
 
-
 ### Financial
 
 | Child Category | Category Definition                                                                | Enumeration Value | String Value (Deprecated) |
@@ -236,7 +232,6 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Bus (Inside)        | Advertising inside a bus, primarily visible to bus passengers             | 10201          | transit.buses.bus         |
 | Terminal            | Advertising at facilities for embarking or disembarking from a bus        | 10202          | transit.buses.terminal    |
 | Bus (Outside)       | Advertising outside a bus, primarily visible to people not riding the bus | 10203          | transit.buses.bus_outside |
-
 
 ### Transit: Subway
 
@@ -306,7 +301,6 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Common Areas          | Shared spaces for study, dining, or leisure activities | 60102          | education.colleges.common               |
 | Athletic Facilities   | Facillities or stadiums for sporting competition       | 60103          | education.colleges.athletics            |
 
-
 ### Office Buildings: Office Buildings
 
 | Grandchild Category | Category Definition                                                                                      | Enumeration ID | String Value (Deprecated)               |
@@ -350,8 +344,3 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
 | Lobby               | A corridor or hall connected with a larger room or series of rooms and used as a passageway or waiting room: such as a large hall serving as a foyer (as of a hotel or theater)                 | 110101         | residential.apartment\_buildings.lobby         |
 | Elevator            | Enclosed, Vertical conveyance for people and goods                   | 110102         | residential.apartment\_buildings.elevator      |
-
-# Specification Expansion & Amendment Process
-
-This specification, written by the contributing parties, is not exhaustive and amenable to changes based on feedback from new participants. However, due to the initial adoption between the contributing parties, the frequency of changes shall be maintained on a cadence that respects the level of effort required by currently-integrated parties. As such, versioning of this spec will occur. Additionally, this spec can be amended on a quarterly cadence between contributors and adopters from the buy-side or sell-side.
-

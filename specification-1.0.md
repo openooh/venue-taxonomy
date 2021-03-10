@@ -16,7 +16,7 @@ Every attempt will be made to version changes to this specification consistent w
 | 1.0.1   | August 4, 2020    | Typos in `bus_shelters`, and misassociation with child siblings in `urban_panels`.       |
 | 1.0.2   | October 8, 2020   | Added contributors                                                                       |
 | 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                             |
-| 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train_stations.platform`                      |
+| 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train_stations.platform`                       |
 | 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                        |
 | 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
 
@@ -252,7 +252,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Grandchild Category | Category Definition                                                              | Enumeration ID | String Value (Deprecated)  |
 | ------------------- | -------------------------------------------------------------------------------- | -------------- | -------------------------- |
 | Fuel Dispenser      | A (typically self-service) device for dispensing fuel to vehicles.               | 20101          | retail.gas\_stations.pump  |
-| Shop                | A store attached to a location who's primary audience if people fueling vehicles | 20102          | retail.gas\_stations.shop  |
+| Shop                | A store attached to a location who's primary audience is people fueling vehicles | 20102          | retail.gas\_stations.shop  |
 
 ### Retail: Grocery
 
@@ -260,7 +260,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
 | Shop Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20301          | retail.grocery.shop\_entrance |
 | Check Out           | Areas primarily dedicated to paying for purchased goods                         | 20302          | retail.grocery.check\_out     |
-| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 20303          | retail.grocery.aisles        |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 20303          | retail.grocery.aisles         |
 
 ### Retail: Malls
 

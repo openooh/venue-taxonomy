@@ -130,7 +130,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 | Child Category        | Category Definition                             | Enumeration ID | String Value (Deprecated)|
 | --------------------- | ----------------------------------------------- | -------------- | ------------------------ |
-| Gas Stations          | An establishment beside a road selling fuel for motor vehicles. | 201 | retail.gas\_stations |
+| Fueling Stations      | An establishment beside a road selling fuel for motor vehicles. | 201 | retail.gas\_stations |
 | Convenience Stores    | A store with extended opening hours and in a convenient location, stocking a limited range of household goods and groceries. | 202 | retail.convenience\_store |
 | Grocery               | A retail shop that primarily sells food, either fresh or preserved. | 203 | retail.grocery |
 | Liquor Stores         | A retail shop that predominantly sells prepackaged alcoholic beverages, typically in bottles, intended to be consumed off the store’s premises. | 204 | retail.liquor\_stores |
@@ -247,7 +247,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Train               | A train that travels primarily above ground, on rails\       | 10601          | transit.train\_stations.train    |
 | Platform            | Areas to wait for, board, or unboard a train                 | 10602          | transit.train\_stations.platform |
 
-### Retail: Gas Stations
+### Retail: Fueling Stations
 
 | Grandchild Category | Category Definition                                                              | Enumeration ID | String Value (Deprecated)  |
 | ------------------- | -------------------------------------------------------------------------------- | -------------- | -------------------------- |

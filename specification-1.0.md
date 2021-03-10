@@ -16,7 +16,7 @@ Every attempt will be made to version changes to this specification consistent w
 | 1.0.1   | August 4, 2020    | Typos in `bus_shelters`, and misassociation with child siblings in `urban_panels`.       |
 | 1.0.2   | October 8, 2020   | Added contributors                                                                       |
 | 1.0.3   | October 15, 2020  | Clarification of definition for `entertainment.recreational`                             |
-| 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train\_stations.platform`                      |
+| 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train_stations.platform`                      |
 | 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                        |
 | 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
 

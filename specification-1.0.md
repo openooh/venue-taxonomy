@@ -295,7 +295,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 ### Education: Colleges and Universities
 
-| Grandchild Category.  | Category Definition                                    | Enumeration ID | String Value (Deprecated)               |
+| Grandchild Category   | Category Definition                                    | Enumeration ID | String Value (Deprecated)               |
 | --------------------- | ------------------------------------------------------ | -------------- | --------------------------------------- |
 | Residences            | Places where faculty or students live                  | 60101          | education.colleges.residences           |
 | Common Areas          | Shared spaces for study, dining, or leisure activities | 60102          | education.colleges.common               |

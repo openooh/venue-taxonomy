@@ -11,13 +11,11 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 Specification
 
 * [v1.0 Specification](./specification-1.0.md) (Current Version)
-* [1.1-DRAFT1](./specification-1.1-draft1.md) is anticipated to be finalized by the end of March, 2021
-
-To report issues, or make suggestions, please feel free to submit an issue tagged against milestone 1.1
+* [v1.1 Specification](./specification-1.1-draft1.md) is in public review, and anticipated to be finalized by the end of March, 2021
 
 Mapping to other taxonomies
 
-* Place Exchange has contributed a mapping with the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
+* Place Exchange has contributed a mapping between v1.0 and the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
 
 ## Specification Working Group
 

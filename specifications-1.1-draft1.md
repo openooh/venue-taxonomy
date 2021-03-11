@@ -1,3 +1,12 @@
+----
+## 1.1-DRAFT1 is in Public Comment until March 26,2021
+
+This draft is intended for community review as we work towards a final release of an updated 1.1 specification, anticipated at the end of March, 2021.
+
+To report issues, or make suggestions, please feel free to [submit an issue](https://github.com/openooh/venue-taxonomy/issues) tagged against milestone 1.1
+
+----
+
 # Digital Out-of-Home Screen Venue Types
 
 The intention of this document is to standardize a taxonomy of venue types that represent Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5 context. The systematization of DOOH venue types will allow for clearer targeting by media buying platforms across a spectrum of available supply-side platforms offering DOOH inventory.

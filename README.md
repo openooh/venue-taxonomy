@@ -10,7 +10,10 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 
 Specification
 
-* [v1.0 Specification](./specification-1.0.md)
+* [v1.0 Specification](./specification-1.0.md) (Current Version)
+* [1.1-DRAFT1](./specification-1.1-draft1.md) is anticipated to be finalized by the end of March, 2021
+
+To report issues, or make suggestions, please feel free to submit an issue tagged against milestone 1.1
 
 Mapping to other taxonomies
 

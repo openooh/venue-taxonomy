@@ -10,30 +10,37 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 
 Specification
 
-* [v1.0 Specification](./specification-1.0.md)
+* [v1.0 Specification](./specification-1.0.md) (Current Version)
+* [v1.1 Specification](./specification-1.1-draft1.md) is in public review, and anticipated to be finalized by the end of March, 2021
 
 Mapping to other taxonomies
 
-* Place Exchange has contributed a mapping with the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
+* Place Exchange has contributed a mapping between v1.0 and the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
 
 ## Specification Working Group
 
-* Adomni
-* Broadsign
-* Place Exchange
-* The Trade Desk
-* Verizon Media
-* VIOOH
-* Vistar Media
+* Aura Koljonen (Broadsign)
+* Bruno Guerrero (Hivestack)
+* [Christian Collins](https://github.com/christiancollins11) (Vistar)
+* Connor Peltz (Broadsign)
+* [Jasleen Kaur](https://github.com/jasleenk-viooh) (VIOOH)
+* [Jason Shao](https://github.com/jayshao) (Place Exchange)
+* Joshua Berg (MediaMath)
+* [M. Wasfi](https://github.com/mowasfi7) (Verizon)
+* Matthew Mercuri (Samsung)
+* [Nicholas Babb](https://github.com/ndbabb) (Adomni)
+* Sweta Vasudevan (Place Exchange)
+* William Hartley-Booth (The Trade Desk)
 
 ## Adoption
 
-| Participant | Status | Version | Notes |
+| Platform | Status | Version | Notes |
 | ----------- | ------ | ------- | ----- |
 | Adomni | Evaluating | 1.0 |  |
 | Broadsign | Production | 1.0 | Supports OpenOOH v1.0.0 as of 8/3/20 |
 | CAASie | Production | 1.0 | Supports OpenOOH v1.0.0 as of 07/16/20 |
 | Campsite | Production | 1.0 | Supports OpenOOH v1.0.0 as of 12/03/20 |
+| Hivestack | Production | 1.0 | Supports OpenOOH v1.0.0 as of 3/01/21 |
 | OutMoove | Production | 1.0 | Supports OpenOOH v1.0.0 as of 09/07/20 |
 | Place Exchange | Production | 1.0 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 |
 | Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |

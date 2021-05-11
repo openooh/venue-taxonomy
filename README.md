@@ -6,16 +6,18 @@ Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5
 The systematization of DOOH venue types will allow for clearer targeting by media buying
 platforms across a spectrum of available supply-side platforms offering DOOH inventory.
 
-## Resources
+## Specification
 
-Specification
+Written Specification
 
+* [v1.1 Specification](./specification-1.1.md) is in public review, and anticipated to be finalized by the end of March, 2021
+
+Resources
+* PlaceExchange has contributed a mapping between v1.0 and the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
+* Lucit has contributed a [JSON version](./specification.json) of the spec (which may become the formal reference in the future)
+
+Previous Versions
 * [v1.0 Specification](./specification-1.0.md) (Current Version)
-* [v1.1 Specification](./specification-1.1-draft1.md) is in public review, and anticipated to be finalized by the end of March, 2021
-
-Mapping to other taxonomies
-
-* Place Exchange has contributed a mapping between v1.0 and the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
 
 ## Specification Working Group
 
@@ -23,13 +25,14 @@ Mapping to other taxonomies
 * Bruno Guerrero (Hivestack)
 * [Christian Collins](https://github.com/christiancollins11) (Vistar)
 * Connor Peltz (Broadsign)
+* Eric Kubischta (Lucit)
 * [Jasleen Kaur](https://github.com/jasleenk-viooh) (VIOOH)
-* [Jason Shao](https://github.com/jayshao) (Place Exchange)
+* [Jason Shao](https://github.com/jayshao) (PlaceExchange)
 * Joshua Berg (MediaMath)
 * [M. Wasfi](https://github.com/mowasfi7) (Verizon)
 * Matthew Mercuri (Samsung)
 * [Nicholas Babb](https://github.com/ndbabb) (Adomni)
-* Sweta Vasudevan (Place Exchange)
+* Sweta Vasudevan (PlaceExchange)
 * William Hartley-Booth (The Trade Desk)
 
 ## Adoption

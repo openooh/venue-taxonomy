@@ -3,7 +3,7 @@ Mobility,1,1,transit
 AIRBORNE,1.1,1,transit
 AIRPORTS,1.2,101,transit.airports
 AIRPORTS_BAGGAGE_CLAIM,1.2.1,10102,transit.airports.baggage_claim
-AIRPORTS_IN_TERMINAL,1.2.2,101,transit.airports.
+AIRPORTS_IN_TERMINAL,1.2.2,101,transit.airports
 AIRPORTS_LOUNGES,1.2.3,10106,transit.airports.lounges
 AIRPORTS_ARRIVALS,1.2.4,10101,transit.airports.arrivals_hall
 AIRPORTS_DEPARTURES,1.2.5,10103,transit.airports.departures_hall

@@ -10,7 +10,7 @@ platforms across a spectrum of available supply-side platforms offering DOOH inv
 
 Written Specification
 
-* [v1.1 Specification](./specification-1.1.md) is in public review, and anticipated to be finalized by the end of March, 2021
+* [v1.1 Specification](./specification-1.1.md) (Current Version)
 
 Resources
 * PlaceExchange has contributed a mapping between v1.0 and the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)

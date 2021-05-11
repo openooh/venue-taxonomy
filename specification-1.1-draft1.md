@@ -331,6 +331,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | ------------------- | -------------- | ----------------------------------- |
 | Lobby               | A corridor or hall connected with a larger room or series of rooms and used as a passageway or waiting room: such as a large hall serving as a foyer (as of a hotel or theater)                 | 80201          | entertainment.movie\_theaters.lobby          |
 | Food Court          | An area within a building (such as a shopping mall) set apart for food concessions.                 | 80202          | entertainment.movie\_theaters.food\_court    |
+| Auditorium          | The area designed for the display of movies with video and sound. These areas are characterized by the fact that the audience will be captive and the video and sound quality can be of cinematic quality                 | 80203          | entertainment.movie\_theaters.auditorium    |
 
 ### Leisure: Sports Entertainment
 

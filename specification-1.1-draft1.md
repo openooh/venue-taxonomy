@@ -306,9 +306,9 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 
 | Grandchild Category   | Category Definition                                    | Enumeration ID | String Value (Deprecated)               |
 | --------------------- | ------------------------------------------------------ | -------------- | --------------------------------------- |
-| Residences            | Places where faculty or students live                  | 60101          | education.colleges.residences           |
-| Common Areas          | Shared spaces for study, dining, or leisure activities | 60102          | education.colleges.common               |
-| Athletic Facilities   | Facillities or stadiums for sporting competition       | 60103          | education.colleges.athletics            |
+| Residences            | Places where faculty or students live                  | 60201          | education.colleges.residences           |
+| Common Areas          | Shared spaces for study, dining, or leisure activities | 60202          | education.colleges.common               |
+| Athletic Facilities   | Facillities or stadiums for sporting competition       | 60203          | education.colleges.athletics            |
 
 ### Office Buildings: Office Buildings
 

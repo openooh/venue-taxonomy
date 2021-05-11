@@ -16,8 +16,8 @@ Resources
 * PlaceExchange has contributed a mapping between v1.0 and the [DMI Taxonomy](./DMI%20DOOH%20ID%20Mapping.csv)
 * Lucit has contributed a [JSON version](./specification.json) of the spec (which may become the formal reference in the future)
 
-Previous Versions
-* [v1.0 Specification](./specification-1.0.md) (Current Version)
+## Previous Specification Versions
+* [v1.0 Specification](./specification-1.0.md)
 
 ## Specification Working Group
 

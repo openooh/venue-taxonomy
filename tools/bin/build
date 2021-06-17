@@ -1,0 +1,8 @@
+#/bin/bash
+# This is the executable for *nix enviornments
+full_path=$(realpath $0)
+dir_path=$(dirname $0)
+
+docker build $dir_path/../docker -t venue-taxonomy-json-schema
+
+docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp venue-taxonomy-json-schema python $dir_path/../src/generate_from_json.py "$@"

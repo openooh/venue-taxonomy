@@ -31,7 +31,7 @@ STATIONS,1.6,1,transit
 STATIONS_RAILWAY,1.6.1,106,transit.train_stations
 STATIONS_RAILWAY_ENTRANCES,1.6.1.1,106,transit.train_stations
 STATIONS_RAILWAY_PLATFORMS,1.6.1.2,10602,transit.train_stations.platform
-STATIONS_SUBWAY,1.6.2,10501,transit.subway
+STATIONS_SUBWAY,1.6.2,105,transit.subway
 STATIONS_SUBWAY_ENTRANCES,1.6.2.1,105,transit.subway
 STATIONS_SUBWAY_PLATFORMS,1.6.2.2,10502,transit.subway.platform
 STATIONS_BUS,1.6.3,10202,transit.buses.terminal

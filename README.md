@@ -45,7 +45,7 @@ Resources
 | Campsite | Production | 1.0 | Supports OpenOOH v1.0.0 as of 12/03/20 |
 | Hivestack | Production | 1.0 | Supports OpenOOH v1.0.0 as of 3/01/21 |
 | OutMoove | Production | 1.0 | Supports OpenOOH v1.0.0 as of 09/07/20 |
-| Place Exchange | Production | 1.1 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 - updated for 1.1 |
+| Place Exchange | Production | 1.1 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 - updated for 1.1 11/16/21 |
 | Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |
 | VIOOH | Evaluating | 1.0 |  |
 | Vistar Media | Production | 1.0 | Supports OpenOOH v1.0.0 (parent/child levels only) as of 9/9/20

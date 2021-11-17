@@ -1,170 +1,100 @@
-DMI Representation,DMI Number,DOOH Enumearation ID,String List
+DMI Representation,DMI Number,OpenOOH Enumearation ID,String List
 Mobility,1,1,transit
-AIRBORNE,1.1,1,transit
 AIRPORTS,1.2,101,transit.airports
-AIRPORTS_BAGGAGE_CLAIM,1.2.1,10102,transit.airports.baggage_claim
-AIRPORTS_IN_TERMINAL,1.2.2,101,transit.airports
-AIRPORTS_LOUNGES,1.2.3,10106,transit.airports.lounges
 AIRPORTS_ARRIVALS,1.2.4,10101,transit.airports.arrivals_hall
+AIRPORTS_BAGGAGE_CLAIM,1.2.1,10102,transit.airports.baggage_claim
 AIRPORTS_DEPARTURES,1.2.5,10103,transit.airports.departures_hall
-AIRPORTS_DUTY_FREE,1.2.6,10107,transit.airports.shopping_area
+AIRPORTS_IN_TERMINAL,1.2.2,10104,transit.airports.food_court
 AIRPORTS_GATES,1.2.7,10105,transit.airports.gates
-AIRPORTS_PUBLIC_AREAS,1.2.8,101,transit.airports
-AIRPORTS_RESTRICTED_AREAS,1.2.9,101,transit.airports
-HIGHWAYS,1.3,30102,outdoor.billboard.highway
-HIGHWAYS_REST_AREAS,1.3.1,301,outdoor.billboard
-HIGHWAYS_ROADSIDE,1.3.2,30101,outdoor.billboard.roadside
-GAS_STATIONS,1.4,201,retail.gas_stations
-PUBLIC_TRANSPORT,1.5,1,transit
-RAIL,1.5.1,1,transit
-SUBWAY,1.5.2,105,transit.subway
+AIRPORTS_LOUNGES,1.2.3,10106,transit.airports.lounges
+AIRPORTS_IN_TERMINAL,1.2.2,10107,transit.airports.shopping_area
 BUSSES,1.5.3,102,transit.buses
 BUSSES_INSIDE,1.5.3.1,10201,transit.buses.bus
-BUSSES_OUTSIDE,1.5.3.2,10201,transit.buses.bus
-TRAMS,1.5.4,1,transit
-TRAMS_INSIDE,1.5.4.1,1,transit
-TRAMS_OUTSIDE,1.5.4.2,1,transit
-TAXIS,1.5.5,1,transit
+STATIONS_BUS,1.6.3,10202,transit.buses.terminal
+BUSSES_OUTSIDE,1.5.3.2,10203,transit.buses.bus_outside
 TAXIS_INSIDE,1.5.5.1,103,transit.taxi_rideshare_tv
 TAXIS_OUTSIDE,1.5.5.2,104,transit.taxi_rideshare_top
-STATIONS,1.6,1,transit
-STATIONS_RAILWAY,1.6.1,106,transit.train_stations
-STATIONS_RAILWAY_ENTRANCES,1.6.1.1,106,transit.train_stations
-STATIONS_RAILWAY_PLATFORMS,1.6.1.2,10602,transit.train_stations.platform
-STATIONS_SUBWAY,1.6.2,10501,transit.subway.subway train
-STATIONS_SUBWAY_ENTRANCES,1.6.2.1,105,transit.subway
+SUBWAY,1.5.2,105,transit.subway
+STATIONS_SUBWAY,1.6.2,10501,transit.subway.train
 STATIONS_SUBWAY_PLATFORMS,1.6.2.2,10502,transit.subway.platform
-STATIONS_BUS,1.6.3,10202,transit.buses.terminal
-STATIONS_TRAM,1.6.4,1,transit
-PARKING,1.7,1,transit
-PARKING_GARAGES,1.7.1,208,retail.parking_garages
-PARKING_CAR_PARKS,1.7.2,208,retail.parking_garages
-TRUCKSIDE,1.8,1,transit
-MARINE,1.9,1,transit
-FERRIES,1.10,1,transit
-CHARGING_STATION,1.11,1,transit
-RENTAL_CAR_SERVICES,1.12,1,transit
+STATIONS_RAILWAY,1.6.1,106,transit.train_stations
+RAIL,1.5.1,10601,transit.train_stations.train
+STATIONS_RAILWAY_PLATFORMS,1.6.1.2,10602,transit.train_stations.platform
+FERRIES,1.1,107,transit.ferry
 RETAIL_POS,2,2,retail
+GAS_STATIONS,1.4,201,retail.gas_stations
+GAS_STATIONS,1.4,20101,retail.gas_stations.pump
+GAS_STATIONS,1.4,20102,retail.gas_stations.shop
 CONVENIENCE_STORES,2.1,202,retail.convenience_store
-ELECTRONICS_STORES,2.2,2,retail
-ELECTRONICS_STORES_CHECKOUT,2.2.1,2,retail
-ELECTRONICS_STORES_INSTORE,2.2.2,2,retail
-KIOSKS,2.3,2,retail
-MALLS,2.4,205,retail.malls
-MALLS_FOOD_COURTS,2.4.1,20502,retail.malls.food_court
-NEWSSTANDS,2.5,2,retail
-LOTTERY_RETAILER,2.6,2,retail
-POST_OFFICES,2.7,2,retail
 SUPERMARKETS,2.8,203,retail.grocery
+SUPERMARKETS_INSTORE,2.8.2,20301,retail.grocery.shop_entrance
 SUPERMARKETS_CHECKOUT,2.8.1,20302,retail.grocery.check_out
-SUPERMARKETS_INSTORE,2.8.2,203,retail.grocery
-HARDWARE_AND_FURNITURE_STORES,2.10,2,retail
-FASHION,2.11,2,retail
-SPORTS,2.12,2,retail
-BAKERIES,2.13,2,retail
-MEAT_FISH,2.14,2,retail
-OPTICIAN,2.15,2,retail
-TOURISM,2.16,2,retail
-TOURISM_TRAVEL_AGENCY,2.16.1,2,retail
-TOURISM_TOURIST_INFORMATION,2.16.2,2,retail
-CAR_DEALERSHIP_OR_WORKSHOP,2.17,2,retail
-FINANCIAL_SERVICES,2.18,10,financial
-FINANCIAL_SERVICES_BANKS,2.18.1,1001,financial.banks
-FINANCIAL_SERVICES_ATMS,2.18.2,10,financial
-PRESS_AND_BOOK_STORES,2.19,2,retail
-BOOK_STORES,2.20,2,retail
+SUPERMARKETS_INSTORE,2.8.2,20303,retail.grocery.aisles
+OTHER,2.22,204,retail.liquor_stores
+MALLS,2.4,205,retail.malls
+MALLS,2.4,20501,retail.malls.concourse
+MALLS_FOOD_COURTS,2.4.1,20502,retail.malls.food_court
+MALLS,2.4,20503,retail.malls.spectacular
+OTHER,2.22,206,retail.dispensaries
 DRUG_STORES,2.21,207,retail.pharmacies
-OTHER,2.22,2,retail
+PARKING_GARAGES,1.7.1,208,retail.parking_garages
 OUTDOOR,3,3,outdoor
-Street,3.1,3,outdoor
-Street_dCLP,3.1.1,3,outdoor
-Street_dCLB,3.1.2,3,outdoor
-Street_Videoboard,3.1.3,3,outdoor
-Pedestrian_Zone,3.2,3,outdoor
-Pedestrian_Zone_dCLP,3.2.1,3,outdoor
-Pedestrian_Zone_dCLB,3.2.2,3,outdoor
-Pedestrian_Zone_Videoboard,3.2.3,3,outdoor
+OUTDOOR,3,301,outdoor.billboards
+HIGHWAYS_ROADSIDE,1.3.2,30101,outdoor.billboards.roadside
+HIGHWAYS,1.3,30102,outdoor.billboards.highway
+OUTDOOR,3,30103,outdoor.billboards.spectacular
+Street,3.1,302,outdoor.urban_panels
+STATIONS_BUS,1.6.3,303,outdoor.bus_shelters
+,,4,health_beauty
+SPORTS_GYMS,6.5.2,401,health_beauty.gyms
+SPORTS_GYMS,6.5.2,40101,health_beauty.gyms.lobby.
+SPORTS_GYMS,6.5.2,40102,health_beauty.gyms.equipment
+SALONS,6.7,402,health_beauty.salons
+SALONS,6.7,40201,health_beauty.salons.unisex
+SALONS,6.7,40202,health_beauty.salons.mens
+SALONS,6.7,40203,health_beauty.salons.womens
+,,403,health_beauty.spas
 Healthcare,4,5,point_care
 DOCTORS_OFFICES,4.1,501,point_care.doctor_offices
-GENERAL MEDICINE,4.1.1,501,point_care.doctor_offices
-ANGIOLOGY,4.1.2,501,point_care.doctor_offices
-OCCUPATIONAL MEDICINE,4.1.3,501,point_care.doctor_offices
-OPHTHALMOLOGY,4.1.4,501,point_care.doctor_offices
-SURGERY,4.1.5,501,point_care.doctor_offices
-DIABETOLOGY,4.1.6,501,point_care.doctor_offices
-ENDOCRINOLOGY,4.1.7,501,point_care.doctor_offices
-GYNECOLOGY AND OBSTETRICS,4.1.8,501,point_care.doctor_offices
-GASTROENTEROLOGY,4.1.9,501,point_care.doctor_offices
-VASCULAR SURGERY,4.1.10,501,point_care.doctor_offices
-OTOLARYNGOLOGY,4.1.11,501,point_care.doctor_offices
-DERMATOLOGY,4.1.12,501,point_care.doctor_offices
-CARDIOSURGERY,4.1.13,501,point_care.doctor_offices
-HYGIENE AND ENVIROMENTAL MEDICINE,4.1.14,501,point_care.doctor_offices
-INTERNAL MEDICINE,4.1.15,501,point_care.doctor_offices
-CARDIOLOGY,4.1.16,501,point_care.doctor_offices
-ORTHODENTICS,4.1.17,501,point_care.doctor_offices
-PAEDIATRICS & ADOLESCENT MEDICINE,4.1.18,501,point_care.doctor_offices
-PAEDIATRIC & ADOLOSCENT PSYACHIATRY,4.1.19,501,point_care.doctor_offices
-ORAL AND MAXILLOFACIAL SURGERY,4.1.20,501,point_care.doctor_offices
-NEUROLOGY,4.1.21,501,point_care.doctor_offices
-ORTHOPAEDICS AND TRAUMATOLOGY,4.1.22,501,point_care.doctor_offices
-PLASTIC AND AESTHETIC SURGERY,4.1.23,501,point_care.doctor_offices
-PNEUMOLOGY,4.1.24,501,point_care.doctor_offices
-PSYCHOTHERAPEUTIC MEDICINE,4.1.25,501,point_care.doctor_offices
-PSYCHIATRY AND PSYCHOTHERAPY,4.1.26,501,point_care.doctor_offices
-RADIOLOGY / NUCLEAR MEDICINE,4.1.27,501,point_care.doctor_offices
-RHEUMATOLOGY,4.1.28,501,point_care.doctor_offices
-PHARMACIES,4.2,501,point_care.doctor_offices
-HOSPITALS,4.3,501,point_care.doctor_offices
 VETERINARIAN_OFFICES,4.4,502,point_care.veterinary_offices
-PHYSIOTHERAPIST,4.5,501,point_care.doctor_offices
-EDUCATION_WORKPLACE_SERVICES,5,,
+EDUCATION_WORKPLACE_SERVICES,5,6,education
 SCHOOLS,5.1,601,education.schools
 UNIVERSITY,5.2,602,education.colleges
-UNIVERSITY_LIBRARIES,5.2.1,602,education.colleges
-UNIVERSITY_BIOCENTERS,5.2.2,602,education.colleges
-UNIVERSITY_LOBBY,5.2.3,602,education.colleges
-UNIVERSITY_AUDITORIUM,5.2.4,602,education.colleges
-UNIVERSITY_CANTEEN,5.2.5,602,education.colleges
-UNIVERSITY_GYM,5.2.6,602,education.colleges
-UNIVERSITY_DEPT_Science & Mathematics,5.2.7,602,education.colleges
-UNIVERSITY_DEPT_Engineering,5.2.8,602,education.colleges
-UNIVERSITY_DEPT_Social_Sciences,5.2.9,602,education.colleges
-UNIVERSITY_DEPT_Law & Economics,5.2.10,602,education.colleges
-UNIVERSITY_DEPT_Medicine & Healthcare,5.2.11,602,education.colleges
-UNIVERSITY_DEPT_Teaching_Professions,5.2.12,602,education.colleges
-UNIVERSITY_DEPT_Linguistics & Cultural Studies,5.2.13,602,education.colleges
-UNIVERSITY_DEPT_Agriculture and Forestry,5.2.14,602,education.colleges
-UNIVERSITY_DEPT_Officials courses,5.2.15,602,education.colleges
-"UNIVERSITY_DEPT_Art, Design & Music",5.2.16,602,education.colleges
-TECHNICAL_COLLEGES,5.3,602,education.colleges
-CHILD_CARE,5.4,6,education
+UNIVERSITY,5.2,60201,education.colleges.residences
+UNIVERSITY,5.2,60202,education.colleges.common
+UNIVERSITY_GYM,5.2.6,60203,education.colleges.athletics
 OFFICE_BUILDINGS,5.5,7,office_buildings
-TRADE_FAIR,5.6,7,office_buildings
-GOVERNMENT OFFICES,5.7,9,government
-GOVERNMENT OFFICES_NATIONAL,5.7.1,9,government
-GOVERNMENT OFFICES_REGIONAL,5.7.2,9,government
-GOVERNMENT OFFICES_LOCAL,5.7.3,9,government
-MILITARY,5.8,902,government.military_bases
+OFFICE_BUILDINGS,5.5,701,office_buildings.office_buildings
+OFFICE_BUILDINGS,5.5,70101,office_buildings.office_buildings.elevator
+OFFICE_BUILDINGS,5.5,70102,office_buildings.office_buildings.lobby
 ENTERTAINMENT_LEISURE,6,8,entertainment
-HOSPITALITY,6.1,8,entertainment
-HOSPITALITY_BARS,6.1.1,804,entertainment.bars
-HOSPITALITY_CLUBS_DISCOS,6.1.2,8,entertainment
-HOSPITALITY_CAFES_AND_COFFEESHOPS,6.1.3,805,entertainment.casual_dining
-HOSPITALITY_RESTAURANTS,6.1.7,805,entertainment.casual_dining
-HOSPITALITY_HIGH_END_RESTAURANTS,6.1.8,8,entertainment
-HOSPITALITY_QSR,6.1.9,806,entertainment.qsr
-HOTELS,6.2,807,entertainment.hotels
+ENTERTAINMENT_LEISURE,6,801,entertainment.recreational
+ENTERTAINMENT_LEISURE,6,80101,entertainment.recreational.theme_parks
+ENTERTAINMENT_LEISURE,6,80102,entertainment.recreational.museums_galleries
+ENTERTAINMENT_LEISURE,6,80103,entertainment.recreational.concert_venues
 MOVIE_THEATER,6.3,802,entertainment.movie_theaters
 MOVIE_THEATER_LOBBIES,6.3.1,80201,entertainment.movie_theaters.lobby
-THEATER_OPERA_MUSICAL,6.4,8,entertainment
+MOVIE_THEATER,6.3,80202,entertainment.movie_theaters.food_court
 SPORTS,6.5,803,entertainment.sports
-SPORTS_GOLF_COURSES,6.5.1,808,entertainment.golf_carts
-SPORTS_GYMS,6.5.2,401,health_beauty.gyms
-SPORTS_SWIMMING,6.5.3,8,entertainment
 SPORTS_ARENAS,6.5.4,80301,entertainment.sports.arena
-RESORTS_LEISURE,6.6,8,entertainment
-SALONS,6.7,8,entertainment
-TANNING_STUDIOS,6.8,8,entertainment
-FAMILY_ENTERTAINMENT,6.9,8,entertainment
-NIGHTLIFE,6.10,8,entertainment
+SPORTS,6.5,80302,entertainment.sports.club_house
+HOSPITALITY_BARS,6.1.1,804,entertainment.bars
+HOSPITALITY_RESTAURANTS,6.1.7,805,entertainment.casual_dining
+HOSPITALITY_QSR,6.1.9,806,entertainment.qsr
+HOTELS,6.2,807,entertainment.hotels
+HOTELS,6.2,80701,entertainment.hotels.lobby
+HOTELS,6.2,80702,entertainment.hotels.elevator
+HOTELS,6.2,80703,entertainment.hotels.room
+SPORTS_GOLF_COURSES,6.5.1,808,entertainment.golf_cart
+NIGHTLIFE,6.1,809,entertainment.night_club
+HOSPITALITY_HIGH_END_RESTAURANTS,6.1.8,810,entertainment.high_end_dining
+GOVERNMENT OFFICES,5.7,9,government
+GOVERNMENT OFFICES_REGIONAL,5.7.2,901,government.dmv
+MILITARY,5.8,902,government.military_bases
+POST_OFFICES,2.7,903,government.postal
+FINANCIAL_SERVICES,2.18,10,financial
+FINANCIAL_SERVICES_BANKS,2.18.1,1001,financial.banks
+,,11,residential
+,,1101,residential.apartment
+,,110101,residential.apartment_buildings.lobby
+,,110102,residential.apartment_buildings.elevator

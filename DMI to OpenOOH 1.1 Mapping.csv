@@ -1,4 +1,4 @@
-DMI Representation,DMI Number,OpenOOH Enumearation ID,String List
+DMI Representation,DMI Number,DOOH Enumearation ID,String List
 Mobility,1,1,transit
 AIRBORNE,1.1,1,transit
 AIRPORTS,1.2,101,transit.airports
@@ -31,7 +31,7 @@ STATIONS,1.6,1,transit
 STATIONS_RAILWAY,1.6.1,106,transit.train_stations
 STATIONS_RAILWAY_ENTRANCES,1.6.1.1,106,transit.train_stations
 STATIONS_RAILWAY_PLATFORMS,1.6.1.2,10602,transit.train_stations.platform
-STATIONS_SUBWAY,1.6.2,10501,transit.subway.subway train
+STATIONS_SUBWAY,1.6.2,105,transit.subway
 STATIONS_SUBWAY_ENTRANCES,1.6.2.1,105,transit.subway
 STATIONS_SUBWAY_PLATFORMS,1.6.2.2,10502,transit.subway.platform
 STATIONS_BUS,1.6.3,10202,transit.buses.terminal
@@ -41,7 +41,7 @@ PARKING_GARAGES,1.7.1,208,retail.parking_garages
 PARKING_CAR_PARKS,1.7.2,208,retail.parking_garages
 TRUCKSIDE,1.8,1,transit
 MARINE,1.9,1,transit
-FERRIES,1.1,1,transit
+FERRIES,1.10,1,transit
 CHARGING_STATION,1.11,1,transit
 RENTAL_CAR_SERVICES,1.12,1,transit
 RETAIL_POS,2,2,retail
@@ -58,7 +58,7 @@ POST_OFFICES,2.7,2,retail
 SUPERMARKETS,2.8,203,retail.grocery
 SUPERMARKETS_CHECKOUT,2.8.1,20302,retail.grocery.check_out
 SUPERMARKETS_INSTORE,2.8.2,203,retail.grocery
-HARDWARE_AND_FURNITURE_STORES,2.1,2,retail
+HARDWARE_AND_FURNITURE_STORES,2.10,2,retail
 FASHION,2.11,2,retail
 SPORTS,2.12,2,retail
 BAKERIES,2.13,2,retail
@@ -72,7 +72,7 @@ FINANCIAL_SERVICES,2.18,10,financial
 FINANCIAL_SERVICES_BANKS,2.18.1,1001,financial.banks
 FINANCIAL_SERVICES_ATMS,2.18.2,10,financial
 PRESS_AND_BOOK_STORES,2.19,2,retail
-BOOK_STORES,2.2,2,retail
+BOOK_STORES,2.20,2,retail
 DRUG_STORES,2.21,207,retail.pharmacies
 OTHER,2.22,2,retail
 OUTDOOR,3,3,outdoor
@@ -167,4 +167,4 @@ RESORTS_LEISURE,6.6,8,entertainment
 SALONS,6.7,8,entertainment
 TANNING_STUDIOS,6.8,8,entertainment
 FAMILY_ENTERTAINMENT,6.9,8,entertainment
-NIGHTLIFE,6.1,8,entertainment
+NIGHTLIFE,6.10,8,entertainment

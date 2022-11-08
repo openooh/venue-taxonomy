@@ -305,8 +305,8 @@
             ]
           },
           {
-            "name": "Health &amp; Beauty",
-            "description": "Health &amp; Beauty",
+            "name": "Health & Beauty",
+            "description": "Health & Beauty",
             "enumeration_id": 4,
             "string_value": "health_beauty",
             "children": [

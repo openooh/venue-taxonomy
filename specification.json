@@ -3,7 +3,7 @@
       "version": "1.1",
       "repository": "https://github.com/openooh/venue-taxonomy",
       "organization": "OpenOOH Working Group",
-      "status": "draft",
+      "status": "accepted",
       "specification": {
         "categories": [
           {
@@ -270,6 +270,18 @@
                 "enumeration_id": 301,
                 "string_value": "outdoor.billboards",
                 "children": [
+                  {
+                    "name": "Roadside",
+                    "description": "Primarily vehicular environments.",
+                    "enumeration_id": 30101,
+                    "string_value": "outdoor.billboards.roadside" 
+                  },
+                  {
+                    "name": "Highway",
+                    "description": "High-speed vehicular environments, typically with controlled entrance/exit (e.g. \"exits\" or \"interchanges\")",
+                    "enumeration_id": 30102,
+                    "string_value": "outdoor.billboards.highway" 
+                  },
                   {
                     "name": "Spectacular",
                     "description": "A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.",

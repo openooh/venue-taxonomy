@@ -38,7 +38,7 @@ Resources
 
 | Platform | Status | Version | Notes |
 | ----------- | ------ | ------- | ----- |
-| Adomni | Evaluating | 1.0 |  |
+| Adomni | Production | 1.1 | Supports OpenOOH v1.1 as of 2024-02-29 |
 | Broadsign Ads | Production | 1.1 | Supports OpenOOH v1.1.0 as of 12/03/20 - updated for 1.1 05/01/22 |
 | Broadsign Reach | Production | 1.1 | Supports OpenOOH v1.1.0 as of 8/3/20 - updated for 1.1 05/01/22 |
 | CAASie | Production | 1.0 | Supports OpenOOH v1.0.0 as of 07/16/20 |

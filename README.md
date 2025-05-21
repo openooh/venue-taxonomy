@@ -50,3 +50,6 @@ Resources
 | VIOOH | Evaluating | 1.0 |  |
 | Vistar Media | Production | 1.0 | Supports OpenOOH v1.0.0 (parent/child levels only) as of 9/9/20
 | The Neuron | Production | 1.1 | Supports OpenOOH v1.0.0 as of 21/Oct/2021 - updated for 1.1 Dec/2022 |
+
+## License
+In alignment with the larger context of [OpenRTB](https://github.com/InteractiveAdvertisingBureau/openrtb2.x), this specification is licensed under a Creative Commons Attribution 3.0 License. To view a copy of this license, visit creativecommons.org/licenses/by/3.0/ or write to Creative Commons, 171 Second Street, Suite 300, San Francisco, CA 94105, USA.

@@ -378,7 +378,7 @@
               },
               {
                 "name": "Veterinary Offices",
-                "description": "Non-hopsital facility run by a veterinarian - for treatment of animals.",
+                "description": "Non-hospital facility run by a veterinarian - for treatment of animals.",
                 "enumeration_id": 502,
                 "string_value": "point_care.veterinary_offices" 
               }
@@ -416,7 +416,7 @@
                   },
                   {
                     "name": "Athletic Facilities",
-                    "description": "Facillities or stadiums for sporting competition",
+                    "description": "Facilities or stadiums for sporting competition",
                     "enumeration_id": 60203,
                     "string_value": "education.colleges.athletics" 
                   }

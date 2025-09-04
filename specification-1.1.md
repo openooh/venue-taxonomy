@@ -1,12 +1,12 @@
 # Digital Out-of-Home Screen Venue Types
 
-The intention of this document is to standardize a taxonomy of venue types that represent Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.5 context. The systematization of DOOH venue types will allow for clearer targeting by media buying platforms across a spectrum of available supply-side platforms offering DOOH inventory.
+The intention of this document is to standardize a taxonomy of venue types that represent Digital-Out-of-Home (DOOH) advertising screens within a programmatic OpenRTB 2.6 context. The systematization of DOOH venue types will allow for clearer targeting by media buying platforms across a spectrum of available supply-side platforms offering DOOH inventory.
 
 ## Versioning & Amendment Process
 
 This specification, written by the contributing parties, is not exhaustive and amenable to changes based on feedback from new participants. However, to facilitate adoption between adopting parties, the frequency of changes shall be maintained on a cadence that respects the level of effort required by currently-integrated parties.
 
-Every attempt will be made to version changes to this specification consistent with [Semantic Versioning](https://semver.org/), with MINOR releases expected on a quarterly cadence. PATCH releases or addressing errata in the specfication will released as needed.
+Every attempt will be made to version changes to this specification consistent with [Semantic Versioning](https://semver.org/), with MINOR releases expected on a bi-annual cadence. PATCH releases or addressing errata in the specfication will released as needed.
 
 ### Version History
 
@@ -19,6 +19,7 @@ Every attempt will be made to version changes to this specification consistent w
 | 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train_stations.platform`                       |
 | 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                        |
 | 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
+| 1.2.0   | September 3, 2025 | New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated language for 2.6 spec request requirements |
 
 ### Reporting Issues
 
@@ -64,11 +65,10 @@ Venues can be assigned to a grandchild but are optional and at the purview of th
 
 ## Placement in Bid Requests
 
-In terms of placing venue types, this specification suggests placing venue type information in the device object of an OpenRTB 2.5 `bid_request`. The path would lead into an extension and a subsequent dooh object. The declaration of format is implicit to one the following formats:
+In terms of placing venue types, this specification suggests placing venue type information in the device object of an OpenRTB 2.6 `bid_request`. The path would lead into an extension and a subsequent dooh object. The declaration of format is implicit to one the following formats:
 
 * `device.ext.dooh.venuetypelist` (equivalent to `venuetypeid` and any parent-categories of the chosen venue)
 * `device.ext.dooh.venuetypeid`
-* `device.ext.dooh.venuetypestring` (Deprecated as of 1.1, will be removed in 1.4)
 
 ### Implementation Notes:
 
@@ -90,11 +90,9 @@ Each category, regardless of tier, has a unique identifier (ID) that is immutabl
 
 The enumerated list can be passed in the bid request. It is a comma-separated array of category IDs from the preceding and dependent tiers. Should only a parent-child category be associated with the screen’s venue, the array will be composed of two enumerated IDs. Refer to the summary chart for further details.
 
-### String Values (Deprecated - Targeted for Removal in 1.4 / 2021Q4)
+### String Values (Deprecated)
 
-String values are text-based identifiers of venue categories. Dependencies on parent and child tiers use a period connector for tier separation. All unique text identifiers are lower case, and combination words utilize the standard underscore. String values may be used as substitutions for enumeration values and enumerated lists and provide greater flexibility for implementation.
 
-In order to ease forwards-compatibility, internationalization, and consistency as the names and definitions of categories evolve, string descriptions as a wire protocol are deprecated as of 1.1, and will be removed in 1.4 (targeted for approximately 2021Q4). Implementors should use Enumeration IDs for persistance or wire-level transmission.
 
 ## Parent Categories & IDs
 
@@ -121,10 +119,12 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Airports             | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges.                                                                     | 101 | transit.airports |
 | Buses                | Displays located on or in city or intercity buses.                 | 102 | transit.buses |
 | Taxi & Rideshare TV  | Advertising displays placed inside taxis and rideshare vehicles visible to passengers in the back seat. | 103 | transit.taxi\_rideshare\_tv |
-| Taxi & Rideshare Top | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers. | 104 | transit.taxi\_rideshare\_top |
+| Taxi & Rideshare Top | (DEPRECATED) - See Outdoor Category (ID - 307) Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers. | 104 | transit.taxi\_rideshare\_top |
 | Subway               | Advertising displays placed inside subway trains or inside stations or on subway platforms. | 105 | transit.subway |
 | Train Stations       | Advertising displays placed inside train stations or on platforms. | 106 | transit.train\_stations    |
 | Ferry                | Advertising displays placed inside a passenger water transport.    | 107 | transit.ferry     |
+| Tram                 | Displays placed on the interior, exterior, or at the stations of urban light rail trams or streetcars.    | 108 | transit.tram     |
+| Ferry                | A rest area or service stop designed for drivers, often found along highways or motorways. These areas provide facilities like fuel stations, restaurants and restrooms.    | 109 | transit.highway\_rest\_area     |
 
 ### Retail
 
@@ -138,6 +138,18 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Cannabis Dispensaries | A store that sells and dispenses cannabis and CBD products. | 206 | retail.dispensaries |
 | Pharmacies            | A store where medicinal drugs are dispensed and sold. | 207 | retail.pharmacies |
 | Parking Garages       | A building in which people usually pay to park their cars, trucks and other vehicles. | 208 | retail.parking\_garages |
+| Furniture             | An establishment that sells furniture. | 209 | retail.furniture |
+| Apparel               | An establishment that sells clothing and accessories. | 210 | retail.apparel |
+| Automotive            | An establishment where a person engages in the Business of selling, offering for sale, or providing servicing or maintenance of a motor vehicle. | 211 | retail.automotive |
+| Laundromat            | An establishment with coin-operated washing machines and dryers for public use. | 212 | retail.laundromat |
+| Vape Shop             | An establishment specializing in the selling of vaping products. | 213 | retail.vape\_shop |
+| Mass Merchandising    | An establishment with a wide range of goods where customers can purchase products, sometimes in bulk. | 214 | retail.mass\_merchandising |
+| Consumer Electronics  | An establishment that sells electronic devices intended for personal or household use, such as appliances, home entertainment systems, and communication devices. These stores may also offer repair services and occasionally sell used goods. | 215 | retail.consumer\_electronics |
+| Retail Other          | A retail business not currently defined by the taxonomy. | 216 | retail.other |
+| Sporting Goods        | An establishment that specializes in selling new sporting equipment, apparel, and related accessories. | 217 | retail.sporting\_goods |
+| Pet Store             | An establishment that sells domestic animals and supplies related to their care, like food, toys, and accessories. | 218 | retail.pet\_stores |
+| Office Supply         | An establishment that sells domestic animals and supplies related to their care, like food, toys, and accessories. | 219 | retail.office\_supply |
+| Home Renovation       | An establishment that sells a wide range of products for home improvement, repair, and decoration. A home renovation store, also known as a home improvement center or home center. | 220 | retail.home\_renovation|
 
 ### Outdoor
 
@@ -146,7 +158,12 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Billboards     | Located primarily on major roads, they attract high-density consumer exposure (mostly to vehicular traffic, but often to pedestrians). | 301 | outdoor.billboards |
 | Urban Panels   | Digital screens in urban environments, typically providing a public amenity. Typically visible to pedestrians and in some cases, vehicular traffic as well. | 302 | outdoor.urban\_panels  |
 | Bus Shelters   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of the enclosure.       | 303            | outdoor.bus\_shelters  |
-
+| Spectaculars   | A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 304            | outdoor.spectaculars  |
+| Window Panels   | An exterior facing digital display located either in front of or directly behind the window or the exterior wall of a building. Typically visible to pedestrians and in some cases, vehicular traffic as well.       | 305            | outdoor.window\_panel  |
+| Moving Billboards   | A digital display appended to or built into the sides and/or back of a vehicle or boat visible to nearby pedestrians and drivers.       | 306            | outdoor.moving\_billboards  |
+| Car Tops   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of the enclosure.       | 307            | outdoor.car\_tops  |
+| Aerial   | Advertising displays that are flown in the sky.       | 308            | outdoor.aerial  |
+| EV Charging Station   | A digital display associated with a piece of infrastructure that allows electric vehicles to recharge their batteries.       | 309            | outdoor.ev\_charging\_station  |
 
 ### Health & Beauty
 
@@ -155,6 +172,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Gyms           | A club, building, or large room, usually containing special equipment, where people go to do physical exercise and get fit. | 401 | health\_beauty.gyms |
 | Salons         | An establishment where a hairdresser, beautician, or couturier conducts business. | 402 | health\_beauty.salons |
 | Spas           | A commercial establishment offering health and beauty treatment through such means as steam baths, exercise equipment, and massage. | 403 | health\_beauty.spas   |
+| Tattoo           | An establishment in which tattooing is carried out professionally. | 404 | health\_beauty.tattoo   |
 
 ### Point of Care
 
@@ -162,6 +180,10 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------ | ------------------------------------------- | -------------- | ------------------------- |
 | Doctor’s Offices   | Non-hospital facility run by a physician - for treatment of people. | 501 | point\_care.doctor\_offices |
 | Veterinary Offices | Non-hopsital facility run by a veterinarian - for treatment of animals. | 502 | point\_care.veterinary\_offices  |
+| Dentist Offices    | A place where dental professionals practice dentistry and offer oral health care to patients. | 503 | point\_care.dentist\_offices  |
+| Hospitals          | An institution providing medical and surgical treatment and nursing care for sick or injured people. | 504 | point\_care.hospitals  |
+| Urgent Care        | A medical facility or clinic that provides prompt treatment for illnesses and injuries that aren't life-threatening. | 505 | point\_care.urgent\_care  |
+| Physiotherapy      | A healthcare facility who focuses on restoring movement and function after injury, illness, or disability. | 506 | point\_care.physiotherapy  |
 
 ### Education
 
@@ -175,6 +197,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Child Category   | Category Definition                         | Enumeration ID | String Value (Deprecated) |
 | ---------------- | ------------------------------------------- | -------------- | ------------------------- |
 | Office Buildings | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.     | 701 | office\_buildings.office\_buildings |
+| Warehouse | A large building where raw materials or manufactured goods may be stored before their export or distribution for sale.     | 702 | office\_buildings.warehouse |
 
 ### Leisure
 
@@ -189,7 +212,9 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Hotels                 | An establishment providing accommodations, means, and other services for travelers and tourists.                     | 807            | entertainment.hotels     |
 | Golf Carts             | A small motorized vehicle for golfers and their equipment.      | 808            | entertainment.golf\_cart |
 | Night Clubs            | An establishment for nighttime entertainment, typically serving drinks and offering music, dancing, etc.   | 809            | entertainment.night\_club |
-| High-End Dining        |  A restaurant that serves expensive food. Often in a more formal atmosphere, and accepting or requiring reservations | 810            | entertainment.high\_end\_dining |
+| High-End Dining        |  (Deprecate) A restaurant that serves expensive food. Often in a more formal atmosphere, and accepting or requiring reservations | 810            | entertainment.high\_end\_dining |
+| Casinos                | A public room or building where gambling games are played.   | 811            | entertainment.casino |
+| Convention Center      | A large building or complex of buildings designed to host conventions, trade shows, exhibitions, and other large-scale events   | 812            | entertainment.convention\_center |
 
 ### Government
 
@@ -198,6 +223,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | DMVs           | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.                          | 901            | government.dmv         |
 | Military Bases | A facility that houses and facilitates training for military personnel and operations.                     | 902            | government.military\_bases |
 | Post Offices   | A facility that handles the receipt, delivery, and processing of mail, packages, or other postal services. | 903            | government.postal |
+| First Responder Facility   | A facility that houses and facilitates training and/or living quarters for Police, Fire, EMS and other first responders | 904            | government.first\_responder\_facility |
 
 ### Financial
 
@@ -224,28 +250,62 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Gates               | Location to wait for or embark or disembark from a specific plane             | 10105          | transit.airports.gates                 |
 | Lounges             | (typically private) places to wait for flights, separate from public spaces   | 10106          | transit.airports.lounges               |
 | Shopping Area       | Retail areas contained within facilities primarily used for servicing flights | 10107          | transit.airports.shopping\_area        |
+| Bar                 | Location within an airport that serves alcoholic beverages. | 10108          | transit.airports.bar        |
+| Spectacular         | Retail areas contained within facilities primarily used for servicing flights | 10109          | transit.airports.spectacular        |
 
 ### Transit: Buses
 
 | Grandchild Category | Category Definition                                                       | Enumeration ID | String Value (Deprecated) |
 | ------------------- | ------------------------------------------------------------------------- | -------------- | ------------------------- |
-| Bus (Inside)        | Advertising inside a bus, primarily visible to bus passengers             | 10201          | transit.buses.bus         |
-| Terminal            | Advertising at facilities for embarking or disembarking from a bus        | 10202          | transit.buses.terminal    |
-| Bus (Outside)       | Advertising outside a bus, primarily visible to people not riding the bus | 10203          | transit.buses.bus_outside |
+| Bus Interior        | Displays located within the interior of city or intercity buses.             | 10201          | transit.buses.bus\_interior         |
+| Terminal            | Advertising at facilities for embarking or disembarking from a bus.        | 10202          | transit.buses.terminal    |
+| Bus (Outside)       | Displays located on the exterior of city or intercity buses. | 10203          | transit.buses.bus\_exterior |
 
 ### Transit: Subway
 
 | Grandchild Category | Category Definition                                                 | Enumeration ID | String Value (Deprecated) |
 | ------------------- | ------------------------------------------------------------------- | -------------- | ------------------------- |
-| Subway Train        | A (typical municipal area) train that travels primarily underground | 10501          | transit.subway.train      |
-| Platform            | Areas to wait for, board, or unboard a subway                       | 10502          | transit.subway.platform   |
+| Subway Train Interior       | Advertising displays placed on the interior of subway trains | 10501          | transit.subway.interior     |
+| Subway Platform            | Areas to wait for, board, or unboard a subway                       | 10502          | transit.subway.platform   |
+| Subway Station             | Displays placed within the concourse areas of a station                       | 10503          | transit.subway.station   |
+| Subway Train Exterior      | Advertising displays placed on the exterior of subway trains                      | 10504          | transit.subway.exterior   |
+| Subway Spectacular         | Large and impactful screen(s) at a prime location. It often utilizes special embellishments.                       | 10505          | transit.subway.spectacular   |
 
 ### Transit: Train Stations
 
 | Grandchild Category | Category Definition                                          | Enumeration ID | String Value (Deprecated)        |
 | ------------------- | ------------------------------------------------------------ | -------------- | -------------------------------- |
-| Train               | A train that travels primarily above ground, on rails\       | 10601          | transit.train\_stations.train    |
+| Train Interior      | Displays placed in the interior of a railroad or commuter style train       | 10601          | transit.train\_stations.train\_interior    |
 | Platform            | Areas to wait for, board, or unboard a train                 | 10602          | transit.train\_stations.platform |
+| Train Exterior            | Displays placed on the exterior of a railroad or commuter style train                 | 10603          | transit.train\_stations.train\_exterior|
+| Station           | Displays placed within the concourse or exterior areas of a commuter style train station.                 | 10604          | transit.train\_stations.station |
+| Spectacular           | Large and impactful screen(s) at a prime location. It often utilizes special embellishments.                 | 10605          | transit.train\_stations.spectacular |
+
+### Transit: Ferry
+
+| Grandchild Category | Category Definition                                          | Enumeration ID | String Value (Deprecated)        |
+| ------------------- | ------------------------------------------------------------ | -------------- | -------------------------------- |
+| Ferry Interior      | Displays located within the interior of city or intercity ferries       | 10701          | transit.ferry.interior    |
+| Ferry Exterior            | Displays located on the exterior of city or intercity ferries                 | 10702          | transit.ferry.exterior |
+| Ferry Terminal            | Advertising at facilities for embarking or disembarking from a ferry or boat                 | 10703          | transit.ferry.terminal|
+
+
+### Transit: Tram
+
+| Grandchild Category | Category Definition                                          | Enumeration ID | String Value (Deprecated)        |
+| ------------------- | ------------------------------------------------------------ | -------------- | -------------------------------- |
+| Tram Interior      | Displays located within the interior of tram or street cars       | 10801          | transit.tram.interior    |
+| Tram Exterior            | Displays located on the exterior of tram or street cars                 | 10802          | transit.tram.exterior |
+| Tram Station            | Advertising at facilities for embarking or disembarking from a tram or streetcar                 | 10803          | transit.tram.terminal|
+
+### Transit: Highway Rest Area
+
+| Grandchild Category | Category Definition                                          | Enumeration ID | String Value (Deprecated)        |
+| ------------------- | ------------------------------------------------------------ | -------------- | -------------------------------- |
+| Exterior      | Displays located outside of any service buildings within the confines of a rest area       | 10901          | transit.highway\_rest\_area.exterior    |
+| Concourse            | Displays located with the pedestrian concourse of a rest area, typically interior atrium or hallway type areas                 | 10902          | transit.highway\_rest\_area.concourse  |
+| Food Court            | A Common area with multiple food vendors and common tables.                 | 10903          | transit.highway\_rest\_area.food\_court |
+| Restroom           | Displays within the restrooms of a highway rest area                | 10904          | transit.highway\_rest\_area.restroom  |
 
 ### Retail: Fueling Stations
 
@@ -254,13 +314,32 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Fuel Dispenser      | A (typically self-service) device for dispensing fuel to vehicles.               | 20101          | retail.gas\_stations.pump  |
 | Shop                | A store attached to a location who's primary audience is people fueling vehicles | 20102          | retail.gas\_stations.shop  |
 
+### Retail: Convenience Store
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20201          | retail.convenience\_store.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 20202          | retail.convenience\_store.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 20203          | retail.convenience\_store.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 20204          | retail.convenience\_store.exterior        |
+
 ### Retail: Grocery
 
 | Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
 | ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
-| Shop Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20301          | retail.grocery.shop\_entrance |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20301          | retail.grocery.entrance |
 | Check Out           | Areas primarily dedicated to paying for purchased goods                         | 20302          | retail.grocery.check\_out     |
 | Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 20303          | retail.grocery.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 20304          | retail.grocery.exterior         |
+
+### Retail: Liquor Stores
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20401          | retail.liquor\_stores.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 20402          | retail.liquor\_stores.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 20403          | retail.liquor\_stores.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 20404          | retail.liquor\_stores.exterior        |
 
 ### Retail: Malls
 
@@ -270,13 +349,101 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Food Court          | A Common area with multiple food vendors and common tables. | 20502          | retail.malls.food\_court  |
 | Spectacular         | Large and impactful screen(s) at a prime location. It often utilizes special embellishments. | 20503 | retail.malls.spectacular |
 
+### Retail: Pharmacies
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 20701          | retail.pharmacies.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 20702          | retail.pharmacies.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 20703          | retail.pharmacies.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 20704          | retail.pharmacies.exterior        |
+
+### Retail: Apparel
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 21001          | retail.apparel.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 21002          | retail.apparel.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 21003          | retail.apparel.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 21004          | retail.apparel.exterior        |
+
+### Retail: Vape Shop
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 21301          | retail.vape\_shop.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 21302          | retail.vape\_shop.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 21303          | retail.vape\_shop.aisles         |
+| Exterior             | Area on or near the outside of the building                | 21304          | retail.vape\_shop.exterior        |
+
+### Retail: Mass Merchandising
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 21401          | retail.mass\_merchandising.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 21402          | retail.mass\_merchandising.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 21403          | retail.mass\_merchandising.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 21404          | retail.mass\_merchandising.exterior        |
+
+### Retail: Consumer Electronics
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 21501          | retail.consumer\_electronics.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 21502          | retail.consumer\_electronics.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 21503          | retail.consumer\_electronics.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 21504          | retail.consumer\_electronics.exterior        |
+
+### Retail: Sporting Goods
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 21701          | retail.sporting\_goods.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 21702          | retail.sporting\_goods.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 21703          | retail.sporting\_goods.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 21704          | retail.sporting\_goods.exterior        |
+
+### Retail: Pet Stores
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 21801          | retail.pet\_stores.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 21802          | retail.pet\_stores.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 21803          | retail.pet\_stores.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 21804          | retail.pet\_stores.exterior        |
+
+### Retail: Office Supply
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 21901          | retail.office\_supply.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 21902          | retail.office\_supply.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 21903          | retail.office\_supply.aisles         |
+| Exterior             | Area on or near the outside of the building                | 21904          | retail.office\_supply.exterior        |
+
+### Retail: Home Renovation
+
+| Grandchild Category | Category Definition                                                             | Enumeration ID | String Value (Deprecated)     |
+| ------------------- | ------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Entrance       | Areas near the entrance to a store, often (but not always) visible from outside | 22001          | retail.home\_renovation.entrance |
+| Check Out           | Areas primarily dedicated to paying for purchased goods                         | 22002          | retail.home\_renovation.check\_out     |
+| Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 22003          | retail.home\_renovation.aisles         |
+| Exterior             | Area on or near the outside of the building                 | 22004          | retail.home\_renovation.exterior        |
+
 ### Outdoor: Billboards
 
 | Grandchild Category | Category Definition                                                                                         | Enumeration ID | String Value (Deprecated)       |
 | ------------------- | ----------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------- |
 | Roadside            | Primarily vehicular environments                                                                            | 30101          | outdoor.billboards.roadside     |
 | Highway             | High-speed vehicular environments, typically with controlled entrance/exit (e.g. "exits" or "interchanges") | 30102          | outdoor.billboards.highway      |
-| Spectacular         | A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 30103          | outdoor.billboards.spectacular  |
+| Spectacular         | (DEPRECATE - see child category 304) A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 30103          | outdoor.billboards.spectacular  |
+
+### Outdoor: Aerial
+
+| Grandchild Category | Category Definition                                                                                         | Enumeration ID | String Value (Deprecated)       |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------- |
+| Aerial Banners         | Advertising display that is carried or pulled behind a flying vehicle (i.e.; helicopter or airplane)       | 30801          | outdoor.billboards.spectacular  |
+| Aerial Drones         | Drone light shows that are used to showcase/represent brands and advertising placements       | 30802          | outdoor.billboards.spectacular  |
 
 ### Health and Beauty: Gyms
 
@@ -285,7 +452,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Lobby               | Area for waiting or meeting guests                                            | 40101          | health\_beauty.gyms.lobby.     |
 | Fitness Equipment   | Area primarily for exercise or the usage of fitness equipment                 | 40102          | health\_beauty.gyms.equipment  |
 
-### Health and Beauty: Salons
+### Health and Beauty: Salons (DEPRECATE - use child category 402)
 
 | Grandchild Category  | Category Definition                      | Enumeration ID | String Value (Deprecated).     |
 | -------------------- | ---------------------------------------- | -------------- | ------------------------------ |
@@ -300,6 +467,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Residences            | Places where faculty or students live                  | 60201          | education.colleges.residences           |
 | Common Areas          | Shared spaces for study, dining, or leisure activities | 60202          | education.colleges.common               |
 | Athletic Facilities   | Facillities or stadiums for sporting competition       | 60203          | education.colleges.athletics            |
+| Dining                | On campus facility where food is served for students, staff and visitors       | 60204          | education.colleges.dining            |
 
 ### Office Buildings: Office Buildings
 
@@ -307,6 +475,8 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | -------------------------------------------------------------------------------------------------------- | -------------- | --------------------------------------- |
 | Elevator            | Enclosed, Vertical conveyance for people and goods                                                       | 70101          | office\_buildings.office\_buildings.elevator |
 | Lobby               | Common space for tenants to meet and greet visitors and guests, typically near entrances                 | 70102          | office\_buildings.office\_buildings.lobby |
+| Gym               | Area within an office building that usually contains special equipment, where people go to do physical exercise and get fit.                 | 70103          | office\_buildings.office\_buildings.gym |
+| Break Room               | A designated area in a workplace where employees can take breaks, relax, eat, and socialize. It serves as a space away from the main work area, offering a place for employees to de-stress, recharge, and interact with colleagues.                  | 70104          | office\_buildings.office\_buildings.break\_room |
 
 ### Leisure: Recreational Locations
 
@@ -315,6 +485,7 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Theme Parks           | An amusement park with a unifying setting or idea.               | 80101          | entertainment.recreational.theme\_parks |
 | Museums and Galleries | A building in which objects of historical, scientific, artistic, or cultural interest are stored and exhibited. e.g. "the Museum of Modern Art"                 | 80102          | entertainment.recreational.museums\_galleries |
 | Concert Venues        | Any location used for a concert or musical performance                | 80103          | entertainment.recreational.concert\_venues    |
+| Bowling Alley        | A location where patrons can take part in bowling activities                | 80104          | entertainment.recreational.bowling    |
 
 ### Leisure: Movie Theaters
 
@@ -322,6 +493,8 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | ------------------- | -------------- | ----------------------------------- |
 | Lobby               | A corridor or hall connected with a larger room or series of rooms and used as a passageway or waiting room: such as a large hall serving as a foyer (as of a hotel or theater)                 | 80201          | entertainment.movie\_theaters.lobby          |
 | Food Court          | An area within a building (such as a shopping mall) set apart for food concessions.                 | 80202          | entertainment.movie\_theaters.food\_court    |
+| On Screen         | An area within a theater where films are displayed on large screens, typically within an auditorium                 | 80203          | entertainment.movie\_theaters.screen    |
+| Restroom         | The restroom of a movie theater, a location for displaying long-format content on large screens.                 | 80204          | entertainment.movie\_theaters.restroom    |
 
 ### Leisure: Sports Entertainment
 
@@ -330,6 +503,12 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Sport Arena         | A central area used for sports or other forms of entertainment and surrounded by seats for spectators. | 80301          | entertainment.sports.arena           |
 | Club House          | Locker rooms used by an athletic team                 | 80302          | entertainment.sports.club\_house     |
 
+### Leisure: Casual Dining
+
+| Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
+| ------------------- | ------------------- | -------------- | ------------------------------------ |
+| Restroom         | The restroom of a restaurant that serves moderately priced food in a casual atmosphere. | 80501          | entertainment.casual\_dining.restroom           |
+
 ### Leisure: Hotels
 
 | Grandchild Category | Category Definition                                                     | Enumeration ID | String Value (Deprecated)            |
@@ -337,6 +516,8 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | Lobby               | Commonly accessible shared spaces for guests at a hotel                 | 80701          | entertainment.hotels.lobby           |
 | Elevator            | Commonly accessible, enclosed spaces used to move between floors.       | 80702          | entertainment.hotels.elevator        |
 | Room                | Locations occupied and restricted to a single guest                     | 80703          | entertainment.hotels.room            |
+| Bar                 | An area within a hotel that serves alcoholic beverages                     | 80704          | entertainment.hotels.bar            |
+| Gym                 | Area within a hotel that usually contains special equipment, where people go to do physical exercise and get fit.                     | 80705          | entertainment.hotels.gym            |
 
 ### Residential: Apartment Buildings and Condominiums
 
@@ -344,3 +525,4 @@ In order to ease forwards-compatibility, internationalization, and consistency a
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
 | Lobby               | A corridor or hall connected with a larger room or series of rooms and used as a passageway or waiting room: such as a large hall serving as a foyer (as of a hotel or theater)                 | 110101         | residential.apartment\_buildings.lobby         |
 | Elevator            | Enclosed, Vertical conveyance for people and goods                   | 110102         | residential.apartment\_buildings.elevator      |
+| Gym            | Area within a residential building that usually contains special equipment, where people go to do physical exercise and get fit.                   | 110103         | residential.apartment\_buildings.gym      |

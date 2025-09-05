@@ -44,6 +44,8 @@ Resources
 * [Robert Loftus](https://github.com/robertloftus) (PlaceExchange)
 * Jason Pan (Stack Adapt)
 * Meritxell Garcia (VIOOH)
+* Joshua Berg (BidSwitch)
+* Connor Peltz (Broadsign)
 
 ## Adoption
 

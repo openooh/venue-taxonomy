@@ -494,7 +494,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Lobby               | A corridor or hall connected with a larger room or series of rooms and used as a passageway or waiting room: such as a large hall serving as a foyer (as of a hotel or theater)                 | 80201          | entertainment.movie\_theaters.lobby          |
 | Food Court          | An area within a building (such as a shopping mall) set apart for food concessions.                 | 80202          | entertainment.movie\_theaters.food\_court    |
 | On Screen         | An area within a theater where films are displayed on large screens, typically within an auditorium                 | 80203          | entertainment.movie\_theaters.screen    |
-| Restroom         | The restroom of a movie theater, a location for displaying long-format content on large screens.                 | 80204          | entertainment.movie\_theaters.restroom    |
+| Restroom         | The restroom of a movie theater, a location for displaying long-format content on large screens                 | 80204          | entertainment.movie\_theaters.restroom    |
 
 ### Leisure: Sports Entertainment
 

@@ -161,7 +161,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Spectaculars   | A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 304            | outdoor.spectaculars  |
 | Window Panels   | An exterior facing digital display located either in front of or directly behind the window or the exterior wall of a building. Typically visible to pedestrians and in some cases, vehicular traffic as well.       | 305            | outdoor.window\_panel  |
 | Moving Billboards   | A digital display appended to or built into the sides and/or back of a vehicle or boat visible to nearby pedestrians and drivers.       | 306            | outdoor.moving\_billboards  |
-| Car Tops   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of the enclosure.       | 307            | outdoor.car\_tops  |
+| Car Tops   | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers.       | 307            | outdoor.car\_tops  |
 | Aerial   | Advertising displays that are flown in the sky.       | 308            | outdoor.aerial  |
 | EV Charging Station   | A digital display associated with a piece of infrastructure that allows electric vehicles to recharge their batteries.       | 309            | outdoor.ev\_charging\_station  |
 
@@ -251,7 +251,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Lounges             | (typically private) places to wait for flights, separate from public spaces   | 10106          | transit.airports.lounges               |
 | Shopping Area       | Retail areas contained within facilities primarily used for servicing flights | 10107          | transit.airports.shopping\_area        |
 | Bar                 | Location within an airport that serves alcoholic beverages. | 10108          | transit.airports.bar        |
-| Spectacular         | Retail areas contained within facilities primarily used for servicing flights | 10109          | transit.airports.spectacular        |
+| Spectacular         | Large and impactful screen(s) at a prime location. It often utilizes special embellishments | 10109          | transit.airports.spectacular        |
 
 ### Transit: Buses
 

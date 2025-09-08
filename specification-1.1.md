@@ -124,7 +124,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Train Stations       | Advertising displays placed inside train stations or on platforms. | 106 | transit.train\_stations    |
 | Ferry                | Advertising displays placed inside a passenger water transport.    | 107 | transit.ferry     |
 | Tram                 | Displays placed on the interior, exterior, or at the stations of urban light rail trams or streetcars.    | 108 | transit.tram     |
-| Ferry                | A rest area or service stop designed for drivers, often found along highways or motorways. These areas provide facilities like fuel stations, restaurants and restrooms.    | 109 | transit.highway\_rest\_area     |
+| Highway Rest Area                | A rest area or service stop designed for drivers, often found along highways or motorways. These areas provide facilities like fuel stations, restaurants and restrooms.    | 109 | transit.highway\_rest\_area     |
 
 ### Retail
 

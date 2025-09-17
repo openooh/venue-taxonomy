@@ -21,6 +21,19 @@ Every attempt will be made to version changes to this specification consistent w
 | 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
 | 1.2.0   | September 3, 2025 | New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated language for 2.6 spec request requirements |
 
+### Participants
+* Minji Jeong (Hivestack by Perion)
+* Ian Brecher (Vistar Media)
+* Joy Hines (Broadsign)
+* Nick Ortega (Stack Adapt)
+* [Jasleen Kaur](https://github.com/jasleenk-viooh) (VIOOH)
+* [Robert Loftus](https://github.com/robertloftus) (PlaceExchange)
+* Jason Pan (Stack Adapt)
+* Meritxell Garcia (VIOOH)
+* Joshua Berg (BidSwitch)
+* Connor Peltz (Broadsign)
+
+
 ### Reporting Issues
 
 Issues, Feature Requests, and Bug Reports should be filed as Github Issues in [this project](https://github.com/openooh/venue-taxonomy/issues) and will be reviewed regularly by spec committee members. Parties interested in participating more actively in the specification development process should reach out in 

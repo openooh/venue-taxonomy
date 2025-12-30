@@ -19,7 +19,8 @@ Every attempt will be made to version changes to this specification consistent w
 | 1.0.4   | December 18, 2020 | Fixed `station` to `stations` in `transit.train_stations.platform`                       |
 | 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                        |
 | 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
-| 1.2.0   | September 3, 2025 | New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated language for 2.6 spec request requirements |
+| 1.2.0   | September 3, 2025 | Draft Published for public consumption and comment. New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated language for 2.6 spec request requirements |
+| 1.2.1   | December 30, 2025 | Final version with public feedback considered. New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated language for 2.6 spec request requirements |
 
 ### Participants
 * Minji Jeong (Hivestack by Perion)
@@ -30,7 +31,7 @@ Every attempt will be made to version changes to this specification consistent w
 * [Robert Loftus](https://github.com/robertloftus) (PlaceExchange)
 * Jason Pan (Stack Adapt)
 * Meritxell Garcia (VIOOH)
-* Joshua Berg (BidSwitch)
+* Joshua Berg (Bidswitch)
 * Connor Peltz (Broadsign)
 
 
@@ -118,7 +119,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Point of Care    | 5              | point_care                |
 | Education        | 6              | education                 |
 | Office Buildings | 7              | office_buildings          |
-| Leisure          | 8              | entertainment             |
+| Entertainment    | 8              | entertainment             |
 | Government       | 9              | government                |
 | Financial        | 10             | financial                 |
 | Residential      | 11             | residential               |
@@ -169,10 +170,10 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Child Category | Category Definition                             | Enumeration ID | String Value (Deprecated) |
 | -------------- | ----------------------------------------------- | -------------- | ------------------------- |
 | Billboards     | Located primarily on major roads, they attract high-density consumer exposure (mostly to vehicular traffic, but often to pedestrians). | 301 | outdoor.billboards |
-| Urban Panels   | Digital screens in urban environments, typically providing a public amenity. Typically visible to pedestrians and in some cases, vehicular traffic as well. | 302 | outdoor.urban\_panels  |
+| Urban Panels   | Digital screens in urban environments, typically providing a public amenity. Typically facing perpedicular to pedestrians, and in some cases vehicular traffic. | 302 | outdoor.urban\_panels  |
 | Bus Shelters   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of the enclosure.       | 303            | outdoor.bus\_shelters  |
 | Spectaculars   | A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 304            | outdoor.spectaculars  |
-| Window Panels   | An exterior facing digital display located either in front of or directly behind the window or the exterior wall of a building. Typically visible to pedestrians and in some cases, vehicular traffic as well.       | 305            | outdoor.window\_panel  |
+| Window Panels   | An exterior facing digital display located either in front of or directly behind the window of a building. Typically facing parallel to pedestrians, and in some cases vehicular traffic.       | 305            | outdoor.window\_panel  |
 | Moving Billboards   | A digital display appended to or built into the sides and/or back of a vehicle or boat visible to nearby pedestrians and drivers.       | 306            | outdoor.moving\_billboards  |
 | Car Tops   | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers.       | 307            | outdoor.car\_tops  |
 | Aerial   | Advertising displays that are flown in the sky.       | 308            | outdoor.aerial  |
@@ -212,7 +213,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Office Buildings | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.     | 701 | office\_buildings.office\_buildings |
 | Warehouse | A large building where raw materials or manufactured goods may be stored before their export or distribution for sale.     | 702 | office\_buildings.warehouse |
 
-### Leisure
+### Entertainment
 
 | Child Category         | Category Definition                            | Enumeration ID | String Value (Deprecated) |
 | ---------------------- | ---------------------------------------------- | -------------- | ------------------------- |
@@ -264,7 +265,6 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Lounges             | (typically private) places to wait for flights, separate from public spaces   | 10106          | transit.airports.lounges               |
 | Shopping Area       | Retail areas contained within facilities primarily used for servicing flights | 10107          | transit.airports.shopping\_area        |
 | Bar                 | Location within an airport that serves alcoholic beverages. | 10108          | transit.airports.bar        |
-| Spectacular         | Large and impactful screen(s) at a prime location. It often utilizes special embellishments | 10109          | transit.airports.spectacular        |
 
 ### Transit: Buses
 
@@ -282,17 +282,15 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Subway Platform            | Areas to wait for, board, or unboard a subway                       | 10502          | transit.subway.platform   |
 | Subway Station             | Displays placed within the concourse areas of a station                       | 10503          | transit.subway.station   |
 | Subway Train Exterior      | Advertising displays placed on the exterior of subway trains                      | 10504          | transit.subway.exterior   |
-| Subway Spectacular         | Large and impactful screen(s) at a prime location. It often utilizes special embellishments.                       | 10505          | transit.subway.spectacular   |
 
-### Transit: Train Stations
+### Transit: Train 
 
 | Grandchild Category | Category Definition                                          | Enumeration ID | String Value (Deprecated)        |
 | ------------------- | ------------------------------------------------------------ | -------------- | -------------------------------- |
-| Train Interior      | Displays placed in the interior of a railroad or commuter style train       | 10601          | transit.train\_stations.train\_interior    |
-| Platform            | Areas to wait for, board, or unboard a train                 | 10602          | transit.train\_stations.platform |
-| Train Exterior            | Displays placed on the exterior of a railroad or commuter style train                 | 10603          | transit.train\_stations.train\_exterior|
-| Station           | Displays placed within the concourse or exterior areas of a commuter style train station.                 | 10604          | transit.train\_stations.station |
-| Spectacular           | Large and impactful screen(s) at a prime location. It often utilizes special embellishments.                 | 10605          | transit.train\_stations.spectacular |
+| Train Interior      | Displays placed in the interior of a railroad or commuter style train       | 10601          | transit.train.train\_interior    |
+| Platform            | Areas to wait for, board, or unboard a train                 | 10602          | transit.train.platform |
+| Train Exterior            | Displays placed on the exterior of a railroad or commuter style train                 | 10603          | transit.train.train\_exterior|
+| Station           | Displays placed within the concourse or exterior areas of a commuter style train station.                 | 10604          | transit.train.station |
 
 ### Transit: Ferry
 
@@ -443,13 +441,13 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Aisles               | Areas primarily dedicated to the display or retrieval of goods                 | 22003          | retail.home\_renovation.aisles         |
 | Exterior             | Area on or near the outside of the building                 | 22004          | retail.home\_renovation.exterior        |
 
-### Outdoor: Billboards
+### Outdoor: Billboards (Deprecated)
 
 | Grandchild Category | Category Definition                                                                                         | Enumeration ID | String Value (Deprecated)       |
 | ------------------- | ----------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------- |
-| Roadside            | Primarily vehicular environments                                                                            | 30101          | outdoor.billboards.roadside     |
-| Highway             | High-speed vehicular environments, typically with controlled entrance/exit (e.g. "exits" or "interchanges") | 30102          | outdoor.billboards.highway      |
-| Spectacular         | (DEPRECATE - see child category 304) A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 30103          | outdoor.billboards.spectacular  |
+| Roadside  (Deprecated)          | Primarily vehicular environments                                                                            | 30101          | outdoor.billboards.roadside     |
+| Highway  (Deprecated)           | High-speed vehicular environments, typically with controlled entrance/exit (e.g. "exits" or "interchanges") | 30102          | outdoor.billboards.highway      |
+| Spectacular (Deprecated)        | (DEPRECATE - see child category 304) A bulletin that is usually larger than 14’ x 48’ and is positioned at a prime location in a market. A spectacular often utilizes special embellishments.       | 30103          | outdoor.billboards.spectacular  |
 
 ### Outdoor: Aerial
 
@@ -465,13 +463,15 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Lobby               | Area for waiting or meeting guests                                            | 40101          | health\_beauty.gyms.lobby.     |
 | Fitness Equipment   | Area primarily for exercise or the usage of fitness equipment                 | 40102          | health\_beauty.gyms.equipment  |
 
-### Health and Beauty: Salons (DEPRECATE - use child category 402)
+### Health and Beauty: Salons
 
 | Grandchild Category  | Category Definition                      | Enumeration ID | String Value (Deprecated).     |
 | -------------------- | ---------------------------------------- | -------------- | ------------------------------ |
 | Unisex Salon         | Salon catering to clients of any sex     | 40201          | health\_beauty.salons.unisex   |
 | Men's Salon          | Salon primarily catering towards men     | 40202          | health\_beauty.salons.mens     |
 | Women's Salon        | Salon primarily catering towards women   | 40203          | health\_beauty.salons.womens   |
+| Nails                | Salon primarily catering towards men     | 40204          | health\_beauty.salons.nails    |
+| Tanning              | Salon primarily catering towards women   | 40205          | health\_beauty.salons.tanning  |
 
 ### Education: Colleges and Universities
 
@@ -491,7 +491,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Gym               | Area within an office building that usually contains special equipment, where people go to do physical exercise and get fit.                 | 70103          | office\_buildings.office\_buildings.gym |
 | Break Room               | A designated area in a workplace where employees can take breaks, relax, eat, and socialize. It serves as a space away from the main work area, offering a place for employees to de-stress, recharge, and interact with colleagues.                  | 70104          | office\_buildings.office\_buildings.break\_room |
 
-### Leisure: Recreational Locations
+### Entertainment: Recreational Locations
 
 | Grandchild Category   | Category Definition | Enumeration ID | String Value (Deprecated)           |
 | --------------------- | ------------------- | -------------- | ----------------------------------- |
@@ -500,7 +500,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | Concert Venues        | Any location used for a concert or musical performance                | 80103          | entertainment.recreational.concert\_venues    |
 | Bowling Alley        | A location where patrons can take part in bowling activities                | 80104          | entertainment.recreational.bowling    |
 
-### Leisure: Movie Theaters
+### Entertainment: Movie Theaters
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)           |
 | ------------------- | ------------------- | -------------- | ----------------------------------- |
@@ -509,20 +509,20 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 | On Screen         | An area within a theater where films are displayed on large screens, typically within an auditorium                 | 80203          | entertainment.movie\_theaters.screen    |
 | Restroom         | The restroom of a movie theater, a location for displaying long-format content on large screens                 | 80204          | entertainment.movie\_theaters.restroom    |
 
-### Leisure: Sports Entertainment
+### Entertainment: Sports Entertainment
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
 | Sport Arena         | A central area used for sports or other forms of entertainment and surrounded by seats for spectators. | 80301          | entertainment.sports.arena           |
 | Club House          | Locker rooms used by an athletic team                 | 80302          | entertainment.sports.club\_house     |
 
-### Leisure: Casual Dining
+### Entertainment: Casual Dining
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
 | Restroom         | The restroom of a restaurant that serves moderately priced food in a casual atmosphere. | 80501          | entertainment.casual\_dining.restroom           |
 
-### Leisure: Hotels
+### Entertainment: Hotels
 
 | Grandchild Category | Category Definition                                                     | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ----------------------------------------------------------------------- | -------------- | ------------------------------------ |

@@ -19,7 +19,7 @@ Resources
 ## Previous Specification Versions
 * [v1.0 Specification](./specification-1.0.md)
 
-## Specification Working Group
+## Specification Working Group v1.1
 
 * Bruno Guerrero (Hivestack)
 * [Christian Collins](https://github.com/christiancollins11) (Vistar)
@@ -33,6 +33,19 @@ Resources
 * [Nicholas Babb](https://github.com/ndbabb) (Adomni)
 * Sweta Vasudevan (PlaceExchange)
 * William Hartley-Booth (The Trade Desk)
+
+## Specification Working Group v1.2
+
+* Minji Jeong (Hivestack by Perion)
+* Ian Brecher (Vistar Media)
+* Joy Hines (Broadsign)
+* Nick Ortega (Stack Adapt)
+* [Jasleen Kaur](https://github.com/jasleenk-viooh) (VIOOH)
+* [Robert Loftus](https://github.com/robertloftus) (PlaceExchange)
+* Jason Pan (Stack Adapt)
+* Meritxell Garcia (VIOOH)
+* Joshua Berg (BidSwitch)
+* Connor Peltz (Broadsign)
 
 ## Adoption
 

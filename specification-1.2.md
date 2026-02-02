@@ -20,7 +20,7 @@ Every attempt will be made to version changes to this specification consistent w
 | 1.0.5   | February 18, 2021 | Fixed `point of care" definitions                                                        |
 | 1.1.0   | March 31, 2021    | New Categories. Compatibility Notes. Clarified Single-Category. Deprecated String values |
 | 1.2.0   | September 3, 2025 | Draft Published for public consumption and comment. New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated language for 2.6 spec request requirements |
-| 1.2.1   | January 27, 2025 | Final version with public feedback considered. New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated gramar. Updated language for 2.6 spec request requirements |
+| 1.2.1   | February 2, 2026 | Final version with public feedback considered. New Categories. Ammended Categories. Deprecated Categories. Updated list of contributors. Updated gramar. Updated language for 2.6 spec request requirements |
 
 ### Participants
 * Minji Jeong (Hivestack by Perion)

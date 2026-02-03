@@ -4,7 +4,7 @@ The intention of this document is to standardize a taxonomy of venue types that 
 
 ## Versioning & Amendment Process
 
-This specification, written by the contributing parties, is not exhaustive and amenable to changes based on feedback from new participants. However, to facilitate adoption between adopting parties, the frequency of changes shall be maintained on a cadence that respects the level of effort required by currently-integrated parties.
+This specification, written by the contributing parties and supported by the Out of Home Advertising Association of America (OAAA), is not exhaustive and amenable to changes based on feedback from new participants. However, to facilitate adoption between adopting parties, the frequency of changes shall be maintained on a cadence that respects the level of effort required by currently-integrated parties.
 
 Every attempt will be made to version changes to this specification consistent with [Semantic Versioning](https://semver.org/), with MINOR releases expected on a bi-annual cadence. PATCH releases or addressing errata in the specfication will released as needed.
 

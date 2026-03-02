@@ -26,11 +26,11 @@ Every attempt will be made to version changes to this specification consistent w
 * Minji Jeong (Hivestack by Perion)
 * Ian Brecher (Vistar Media)
 * Joy Hines (Broadsign)
-* Nick Ortega (Stack Adapt)
+* Nick Ortega (StackAdapt)
 * [Jasleen Kaur](https://github.com/jasleenk-viooh) (VIOOH)
 * [Robert Loftus](https://github.com/robertloftus) (PlaceExchange)
-* Jason Pan (Stack Adapt)
-* Joshua Berg (Bidswitch)
+* Jason Pan (StackAdapt)
+* Joshua Berg (StackAdapt)
 
 
 ### Reporting Issues

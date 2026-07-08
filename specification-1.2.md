@@ -561,7 +561,7 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 
 | Grandchild Category | Category Definition | Enumeration ID | String Value (Deprecated)            |
 | ------------------- | ------------------- | -------------- | ------------------------------------ |
-| Restroom         | The restroom of a large building or complex of buildings designed to host conventions, trade shows, exhibitions, and other large-scale events         |  81201          | entertainment.casino.restroom
+| Restroom         | The restroom of a large building or complex of buildings designed to host conventions, trade shows, exhibitions, and other large-scale events         |  81201          | entertainment.convention_center.restroom
 
 ### Residential: Apartment Building and Condominium
 

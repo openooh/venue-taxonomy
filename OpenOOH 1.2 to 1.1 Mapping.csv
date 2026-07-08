@@ -99,10 +99,10 @@ retail.sporting_goods.check_out,21702,205,retail.malls
 retail.sporting_goods.aisles,21703,205,retail.malls
 retail.sporting_goods.exterior,21704,205,retail.malls
 retail.pet_stores,218,205,retail.malls
-retail.pet_stores.entrance,218901,205,retail.malls
-retail.pet_stores.check_out,218902,205,retail.malls
-retail.pet_stores.aisles,218903,205,retail.malls
-retail.pet_stores.exterior,218904,205,retail.malls
+retail.pet_stores.entrance,21801,205,retail.malls
+retail.pet_stores.check_out,21802,205,retail.malls
+retail.pet_stores.aisles,21803,205,retail.malls
+retail.pet_stores.exterior,21804,205,retail.malls
 retail.office_supply,219,205,retail.malls
 retail.office_supply.entrance,21901,205,retail.malls
 retail.office_supply.check_out,21902,205,retail.malls
@@ -192,7 +192,7 @@ entertainment.hotels.gym,80705,401,health_beauty.gyms
 entertainment.hotels.restroom,80706,807,entertainment.hotels
 entertainment.golf_cart,808,808,entertainment.golf_carts
 entertainment.night_club,809,809,entertainment.night_club
-entertainment.night_club.restroom,809,809,entertainment.night_club
+entertainment.night_club.restroom,80901,809,entertainment.night_club
 entertainment.high_end_dining,810,810,entertainment.high_end_dining
 entertainment.casino,811,804,entertainment.bars
 entertainment.casino.restroom,81101,804,entertainment.bars

@@ -7,13 +7,13 @@ The intention of this document is to standardize the list of venue types that re
 
 ### Contributors
 
-* Adomni - Nicholas Babb
-* Broadsign - Matthew Mercuri
-* Place Exchange - Jason Shao
-* The Trade Desk - Alex Cohen
-* Verizon Media - M Wasfi
-* VIOOH - Jasleen Kaur
-* Vistar Media - Christian Collins
+- Adomni - Nicholas Babb
+- Broadsign - Matthew Mercuri
+- Place Exchange - Jason Shao
+- The Trade Desk - Alex Cohen
+- Verizon Media - M Wasfi
+- VIOOH - Jasleen Kaur
+- Vistar Media - Christian Collins
 
 ## Versioning
 
@@ -32,11 +32,11 @@ Digital Out-of-Home screens, available within a programmatic context, maintain s
 
 ## Definitions & Specification Guidelines
 
-Screen Venue Types should describe an environment and the audience that may be found there. 
+Screen Venue Types should describe an environment and the audience that may be found there.
 
 A venue type should also describe a media format, except when the media format cannot be separated from the environment. For example, an “ATM” may be in a mall, or a convenience store. The venue type should reflect those parameters.
 
-Screen venue types should not obscure key elements of the environment. 
+Screen venue types should not obscure key elements of the environment.
 
 Venue types should not equate environments that serve dramatically different purposes. For example, it would be insincere to label both Marijuana dispensaries AND pharmacies under the “Wellness” category. These two environments serve very different purposes and audiences, and thus cannot be grouped together.
 
@@ -108,84 +108,83 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Transit
 
-| Child Category       | Category Definition                            | Enumeration ID | String Value               |
-| -------------------- | ---------------------------------------------- | -------------- | -------------------------- |
-| Airports             | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges. | 101 | transit.airports |
-| Buses                | Displays located on the inside of city or intercity buses. | 102 | transit.buses |
-| Taxi & Rideshare TV  | Advertising displays placed inside taxis and rideshare vehicles visible to passengers in the back seat. | 103 | transit.taxi\_rideshare\_tv |
-| Taxi & Rideshare Top | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers. | 104 | transit.taxi\_rideshare\_top |
-| Subway               | Advertising displays placed inside subway trains or inside stations or on subway platforms. | 105 | transit.subway |
-| Train Stations       | Advertising displays placed inside train stations or on platforms. | 106 | transit.train\_stations    |
+| Child Category       | Category Definition                                                                                                                                              | Enumeration ID | String Value                 |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------------------- |
+| Airports             | Signage located throughout terminals in arrival and departure areas, ticketing areas, baggage claim, gate-hold rooms, concourses, retail shops, and VIP lounges. | 101            | transit.airports             |
+| Buses                | Displays located on the inside of city or intercity buses.                                                                                                       | 102            | transit.buses                |
+| Taxi & Rideshare TV  | Advertising displays placed inside taxis and rideshare vehicles visible to passengers in the back seat.                                                          | 103            | transit.taxi\_rideshare\_tv  |
+| Taxi & Rideshare Top | Advertising displays placed on top of taxi and rideshare vehicles visible to nearby pedestrian and drivers.                                                      | 104            | transit.taxi\_rideshare\_top |
+| Subway               | Advertising displays placed inside subway trains or inside stations or on subway platforms.                                                                      | 105            | transit.subway               |
+| Train Stations       | Advertising displays placed inside train stations or on platforms.                                                                                               | 106            | transit.train\_stations      |
 
 ### Retail
 
-| Child Category     | Category Definition                             | Enumeration ID | String Value            |
-| ------------------ | ----------------------------------------------- | -------------- | ----------------------- |
-| Gas Stations       | An establishment beside a road selling fuel for motor vehicles. | 201 | retail.gas\_stations |
-| Convenience Stores | A store with extended opening hours and in a convenient location, stocking a limited range of household goods and groceries. | 202 | retail.convenience\_store |
-| Grocery            | A retail shop that primarily sells food, either fresh or preserved. | 203 | retail.grocery |
-| Liquor Stores      | A retail shop that predominantly sells prepackaged alcoholic beverages, typically in bottles, intended to be consumed off the store’s premises. | 204 | retail.liquor\_stores |
-| Mall               | A large building or series of connected buildings containing a variety of retail stores and typically also restaurants. | 205 | retail.malls |
-| Dispensaries       | A store that sells and dispenses medicinal marijuana and CBD products. | 206 | retail.dispensaries |
-| Pharmacies         | A store where medicinal drugs are dispensed and sold. | 207 | retail.pharmacies |
-| Parking Garages    | A building in which people usually pay to park their cars, trucks and other vehicles. | 208 | retail.parking\_garages |
+| Child Category     | Category Definition                                                                                                                             | Enumeration ID | String Value              |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- |
+| Gas Stations       | An establishment beside a road selling fuel for motor vehicles.                                                                                 | 201            | retail.gas\_stations      |
+| Convenience Stores | A store with extended opening hours and in a convenient location, stocking a limited range of household goods and groceries.                    | 202            | retail.convenience\_store |
+| Grocery            | A retail shop that primarily sells food, either fresh or preserved.                                                                             | 203            | retail.grocery            |
+| Liquor Stores      | A retail shop that predominantly sells prepackaged alcoholic beverages, typically in bottles, intended to be consumed off the store’s premises. | 204            | retail.liquor\_stores     |
+| Mall               | A large building or series of connected buildings containing a variety of retail stores and typically also restaurants.                         | 205            | retail.malls              |
+| Dispensaries       | A store that sells and dispenses medicinal marijuana and CBD products.                                                                          | 206            | retail.dispensaries       |
+| Pharmacies         | A store where medicinal drugs are dispensed and sold.                                                                                           | 207            | retail.pharmacies         |
+| Parking Garages    | A building in which people usually pay to park their cars, trucks and other vehicles.                                                           | 208            | retail.parking\_garages   |
 
 ### Outdoor
 
-| Child Category | Category Definition                             | Enumeration ID | String Value           |
-| -------------- | ----------------------------------------------- | -------------- | ---------------------- |
-| Billboards     | Located primarily on major roads, they attract high-density consumer exposure (mostly to vehicular traffic, but often to pedestrians). | 301 | outdoor.billboards |
-| Urban Panels   | Digital screens in urban environments, typically providing a public amenity. Typically visible to pedestrians and in some cases, vehicular traffic as well. | 302 | outdoor.urban\_panels  |
-| Bus Shelters   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of the enclosure.       | 303            | outdoor.bus\_shelters  |
-
+| Child Category | Category Definition                                                                                                                                         | Enumeration ID | String Value          |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------- |
+| Billboards     | Located primarily on major roads, they attract high-density consumer exposure (mostly to vehicular traffic, but often to pedestrians).                      | 301            | outdoor.billboards    |
+| Urban Panels   | Digital screens in urban environments, typically providing a public amenity. Typically visible to pedestrians and in some cases, vehicular traffic as well. | 302            | outdoor.urban\_panels |
+| Bus Shelters   | Enclosures where individuals may wait for buses in an urban environment. Signage may be attached to the interior or exterior of the enclosure.              | 303            | outdoor.bus\_shelters |
 
 ### Health & Beauty
 
-| Child Category | Category Definition                         | Enumeration ID | String Value          |
-| -------------- | ------------------------------------------- | -------------- | --------------------- |
-| Gyms           | A club, building, or large room, usually containing special equipment, where people go to do physical exercise and get fit. | 401 | health\_beauty.gyms |
-| Salons         | An establishment where a hairdresser, beautician, or couturier conducts business. | 402 | health\_beauty.salons |
-| Spas           | A commercial establishment offering health and beauty treatment through such means as steam baths, exercise equipment, and massage. | 403 | health\_beauty.spas   |
+| Child Category | Category Definition                                                                                                                 | Enumeration ID | String Value          |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------- |
+| Gyms           | A club, building, or large room, usually containing special equipment, where people go to do physical exercise and get fit.         | 401            | health\_beauty.gyms   |
+| Salons         | An establishment where a hairdresser, beautician, or couturier conducts business.                                                   | 402            | health\_beauty.salons |
+| Spas           | A commercial establishment offering health and beauty treatment through such means as steam baths, exercise equipment, and massage. | 403            | health\_beauty.spas   |
 
 ### Point of Care
 
-| Child Category     | Category Definition                         | Enumeration ID | String Value              |
-| ------------------ | ------------------------------------------- | -------------- | ------------------------- |
-| Doctor’s Offices   | Non-hospital facility run by a physician - for treatment of people. | 501 | point\_care.doctor\_offices |
-| Veterinary Offices | Non-hopsital facility run by a veterinarian - for treatment of animals. | 502 | point\_care.veterinary\_offices  |
+| Child Category     | Category Definition                                                     | Enumeration ID | String Value                    |
+| ------------------ | ----------------------------------------------------------------------- | -------------- | ------------------------------- |
+| Doctor’s Offices   | Non-hospital facility run by a physician - for treatment of people.     | 501            | point\_care.doctor\_offices     |
+| Veterinary Offices | Non-hopsital facility run by a veterinarian - for treatment of animals. | 502            | point\_care.veterinary\_offices |
 
 ### Education
 
-| Child Category            | Category Definition                            | Enumeration ID | String Value       |
-| ------------------------- | ---------------------------------------------- | -------------- | ------------------ |
-| Schools                   | An educational institution designed to provide learning spaces and learning environments for the teaching of students between K - 12 under the direction of teachers. | 601 | education.schools |
-| Colleges and Universities | An education institution designed for instruction, examination, or both, of students  in many branches of advanced learning, conferring degrees in various faculties, and often embodying colleges and similar institutions. | 602 | education.colleges |
+| Child Category            | Category Definition                                                                                                                                                                                                         | Enumeration ID | String Value       |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ |
+| Schools                   | An educational institution designed to provide learning spaces and learning environments for the teaching of students between K - 12 under the direction of teachers.                                                       | 601            | education.schools  |
+| Colleges and Universities | An education institution designed for instruction, examination, or both, of students in many branches of advanced learning, conferring degrees in various faculties, and often embodying colleges and similar institutions. | 602            | education.colleges |
 
 ### Office Buildings
 
-| Child Category   | Category Definition                         | Enumeration ID | String Value               |
-| ---------------- | ------------------------------------------- | -------------- | -------------------------- |
-| Office Buildings | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.     | 701 | office\_buildings.office\_buildings |
+| Child Category   | Category Definition                                                                                                                                                                                                                                 | Enumeration ID | String Value                        |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------- |
+| Office Buildings | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators. | 701            | office\_buildings.office\_buildings |
 
 ### Entertainment
 
-| Child Category         | Category Definition                            | Enumeration ID | String Value             |
-| ---------------------- | ---------------------------------------------- | -------------- | ------------------------ |
-| Recreational Locations | Location where recreational and/or leisure activities take place. | 801 | entertainment.recreational |
-| Movie Theaters         | Location for displaying long-format content on large screens. | 802 | entertainment.movie\_theaters |
-| Sports Entertainment   | A venue that individuals or groups can play an active sport or activity.| 803 | entertainment.sports |
-| Bars                   | A retail business that serves alcoholic beverages. | 804 | entertainment.bars |
-| Casual Dining          | A restaurant that serves moderately priced food in a casual atmosphere. | 805 | entertainment.casual\_dining |
-| QSR                    | A fast food restaurant, also known as a quick service restaurant within the industry, is a specific type of restaurant that serves fast-food cuisine and has minimal table service. | 806            | entertainment.qsr        |
-| Hotels                 | An establishment providing accommodations, means, and other services for travelers and tourists.                     | 807            | entertainment.hotels     |
-| Golf Carts             | A small motorized vehicle for golfers and their equipment.      | 808            | entertainment.golf\_cart |
+| Child Category         | Category Definition                                                                                                                                                                 | Enumeration ID | String Value                  |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------- |
+| Recreational Locations | Location where recreational and/or leisure activities take place.                                                                                                                   | 801            | entertainment.recreational    |
+| Movie Theaters         | Location for displaying long-format content on large screens.                                                                                                                       | 802            | entertainment.movie\_theaters |
+| Sports Entertainment   | A venue that individuals or groups can play an active sport or activity.                                                                                                            | 803            | entertainment.sports          |
+| Bars                   | A retail business that serves alcoholic beverages.                                                                                                                                  | 804            | entertainment.bars            |
+| Casual Dining          | A restaurant that serves moderately priced food in a casual atmosphere.                                                                                                             | 805            | entertainment.casual\_dining  |
+| QSR                    | A fast food restaurant, also known as a quick service restaurant within the industry, is a specific type of restaurant that serves fast-food cuisine and has minimal table service. | 806            | entertainment.qsr             |
+| Hotels                 | An establishment providing accommodations, means, and other services for travelers and tourists.                                                                                    | 807            | entertainment.hotels          |
+| Golf Carts             | A small motorized vehicle for golfers and their equipment.                                                                                                                          | 808            | entertainment.golf\_cart      |
 
 ### Government
 
-| Child Category | Category Definition                             | Enumeration ID | String Value           |
-| -------------- | ----------------------------------------------- | -------------- | ---------------------- |
-| DMVs           | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators.         | 901            | government.dmv         |
-| Military Bases | A facility that houses and facilitates training for military personnel and operations. | 902            | government.military\_bases |
+| Child Category | Category Definition                                                                                                                                                                                                                                 | Enumeration ID | String Value               |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------- |
+| DMVs           | An office building, also known as an office block or business center is a form of commercial building which contains spaces mainly designed to be used for offices. Advertising displays may be in building lobbies, common areas, or in elevators. | 901            | government.dmv             |
+| Military Bases | A facility that houses and facilitates training for military personnel and operations.                                                                                                                                                              | 902            | government.military\_bases |
 
 ### Financial
 
@@ -203,15 +202,15 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Transit: Airports
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value              |
-| ------------------- | ------------------- | -------------- | ------------------------- |
-| Arrival Hall        | TBC                 | 10101          | transit.airports.arrivals\_hall                    |
-| Baggage Claim       | TBC                 | 10102          | transit.airports.baggage\_claim                  |
-| Departures Hall     | TBC                 | 10103          | transit.airports.departures\_hall                 |
-| Food Court          | TBC                 | 10104          | transit.airports.food\_court                       |
-| Gates               | TBC                 | 10105          | transit.airports.gates    |
-| Lounges             | TBC                 | 10106          | transit.airports.lounges  |
-| Shopping Area       | TBC                 | 10107          | transit.airports.shopping\_area                   |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                      |
+| ------------------- | ------------------- | -------------- | --------------------------------- |
+| Arrival Hall        | TBC                 | 10101          | transit.airports.arrivals\_hall   |
+| Baggage Claim       | TBC                 | 10102          | transit.airports.baggage\_claim   |
+| Departures Hall     | TBC                 | 10103          | transit.airports.departures\_hall |
+| Food Court          | TBC                 | 10104          | transit.airports.food\_court      |
+| Gates               | TBC                 | 10105          | transit.airports.gates            |
+| Lounges             | TBC                 | 10106          | transit.airports.lounges          |
+| Shopping Area       | TBC                 | 10107          | transit.airports.shopping\_area   |
 
 ### Transit: Buses
 
@@ -236,10 +235,10 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Retail: Gas Stations
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value               |
-| ------------------- | ------------------- | -------------- | -------------------------- |
-| Pump                | TBC                 | 20101          | retail.gas\_stations.pump  |
-| Shop                | TBC                 | 20102          | retail.gas\_stations.shop  |
+| Grandchild Category | Category Definition | Enumeration ID | String Value              |
+| ------------------- | ------------------- | -------------- | ------------------------- |
+| Pump                | TBC                 | 20101          | retail.gas\_stations.pump |
+| Shop                | TBC                 | 20102          | retail.gas\_stations.shop |
 
 ### Retail: Grocery
 
@@ -258,63 +257,62 @@ String values are text-based identifiers of venue categories. Dependencies on pa
 
 ### Outdoor: Billboards
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value            |
-| ------------------- | ------------------- | -------------- | ----------------------- |
-| Roadside            | TBC                 | 30101          | outdoor.billboards.roadside  |
-| Highway             | TBC                 | 30102          | outdoor.billboards.highway |
-| Spectacular         | TBC                 | 30103          | outdoor.billboards.spectacular  |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                   |
+| ------------------- | ------------------- | -------------- | ------------------------------ |
+| Roadside            | TBC                 | 30101          | outdoor.billboards.roadside    |
+| Highway             | TBC                 | 30102          | outdoor.billboards.highway     |
+| Spectacular         | TBC                 | 30103          | outdoor.billboards.spectacular |
 
 ### Health and Beauty: Gyms
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value           |
-| ------------------- | ------------------- | -------------- | ---------------------- |
-| Lobby               | TBC                 | 40101          | health\_beauty.gyms.lobby |
-| Fitness Equipment   | TBC                 | 40102          | health\_beauty.gyms.equipment  |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                  |
+| ------------------- | ------------------- | -------------- | ----------------------------- |
+| Lobby               | TBC                 | 40101          | health\_beauty.gyms.lobby     |
+| Fitness Equipment   | TBC                 | 40102          | health\_beauty.gyms.equipment |
 
 ### Office Buildings: Office Buildings
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value               |
-| ------------------- | ------------------- | -------------- | -------------------------- |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                                 |
+| ------------------- | ------------------- | -------------- | -------------------------------------------- |
 | Elevator            | TBC                 | 70101          | office\_buildings.office\_buildings.elevator |
-| Lobby               | TBC                 | 70102          | office\_buildings.office\_buildings.lobby |
+| Lobby               | TBC                 | 70102          | office\_buildings.office\_buildings.lobby    |
 
 ### Entertainment: Recreational Locations
 
-| Grandchild Category   | Category Definition | Enumeration ID | String Value           |
-| --------------------- | ------------------- | -------------- | ---------------------- |
-| Theme Parks           | TBC                 | 80101          | entertainment.recreational.theme\_parks |
+| Grandchild Category   | Category Definition | Enumeration ID | String Value                                  |
+| --------------------- | ------------------- | -------------- | --------------------------------------------- |
+| Theme Parks           | TBC                 | 80101          | entertainment.recreational.theme\_parks       |
 | Museums and Galleries | TBC                 | 80102          | entertainment.recreational.museums\_galleries |
-| Concert Venues        | TBC                 | 80103          | entertainment.recreational.concer\_venues    |
+| Concert Venues        | TBC                 | 80103          | entertainment.recreational.concer\_venues     |
 
 ### Entertainment: Movie Theaters
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value           |
-| ------------------- | ------------------- | -------------- | ---------------------- |
-| Lobby               | TBC                 | 80201          | entertainment.movie\_theaters.lobby          |
-| Food Court          | TBC                 | 80202          | entertainment.movie\_theaters.food\_court    |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                              |
+| ------------------- | ------------------- | -------------- | ----------------------------------------- |
+| Lobby               | TBC                 | 80201          | entertainment.movie\_theaters.lobby       |
+| Food Court          | TBC                 | 80202          | entertainment.movie\_theaters.food\_court |
 
 ### Entertainment: Sports Entertainment
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value            |
-| ------------------- | ------------------- | -------------- | ----------------------- |
-| Sport Arena         | TBC                 | 80301          | entertainment.sports.arena                    |
-| Club House          | TBC                 | 80302          | entertainment.sports.club\_house               |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                     |
+| ------------------- | ------------------- | -------------- | -------------------------------- |
+| Sport Arena         | TBC                 | 80301          | entertainment.sports.arena       |
+| Club House          | TBC                 | 80302          | entertainment.sports.club\_house |
 
 ### Entertainment: Hotels
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value            |
-| ------------------- | ------------------- | -------------- | ----------------------- |
-| Lobby               | TBC                 | 80701          | entertainment.hotels.lobby                     |
-| Elevator            | TBC                 | 80702          | entertainment.hotels.elevator                  |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                  |
+| ------------------- | ------------------- | -------------- | ----------------------------- |
+| Lobby               | TBC                 | 80701          | entertainment.hotels.lobby    |
+| Elevator            | TBC                 | 80702          | entertainment.hotels.elevator |
 
 ### Residential: Apartment Buildings
 
-| Grandchild Category | Category Definition | Enumeration ID | String Value            |
-| ------------------- | ------------------- | -------------- | ----------------------- |
-| Lobby               | TBC                 | 110101         | residential.apartment\_buildings.lobby         |
-| Elevator            | TBC                 | 110102         | residential.apartment\_buildings.elevator      |
+| Grandchild Category | Category Definition | Enumeration ID | String Value                              |
+| ------------------- | ------------------- | -------------- | ----------------------------------------- |
+| Lobby               | TBC                 | 110101         | residential.apartment\_buildings.lobby    |
+| Elevator            | TBC                 | 110102         | residential.apartment\_buildings.elevator |
 
 # Specification Expansion & Amendment Process
 
 This specification, written by the contributing parties, is not exhaustive and amenable to changes based on feedback from new participants. However, due to the initial adoption between the contributing parties, the frequency of changes shall be maintained on a cadence that respects the level of effort required by currently-integrated parties. As such, versioning of this spec will occur. Additionally, this spec can be amended on a quarterly cadence between contributors and adopters from the buy-side or sell-side.
-

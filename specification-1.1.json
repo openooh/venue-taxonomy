@@ -4,7 +4,6 @@
       "repository": "https://github.com/openooh/venue-taxonomy",
       "organization": "OpenOOH Working Group",
       "status": "accepted",
-      "notes" : "This file is here for legacy reasons.  Please use the versioned spec files.",
       "specification": {
         "categories": [
           {

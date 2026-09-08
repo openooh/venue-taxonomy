@@ -24,7 +24,7 @@ Resources
 * Bruno Guerrero (Hivestack)
 * [Christian Collins](https://github.com/christiancollins11) (Vistar)
 * Connor Peltz (Broadsign)
-* Eric Kubischta (Lucit)
+* [Eric Kubischta](https://github.com/ericlucit) (Lucit)
 * [Jasleen Kaur](https://github.com/jasleenk-viooh) (VIOOH)
 * [Jason Shao](https://github.com/jayshao) (PlaceExchange)
 * Joshua Berg (MediaMath)
@@ -46,6 +46,7 @@ Resources
 * Meritxell Garcia (VIOOH)
 * Joshua Berg (BidSwitch)
 * Connor Peltz (Broadsign)
+* [Eric Kubischta](https://github.com/ericlucit) (Lucit)
 
 ## Adoption
 

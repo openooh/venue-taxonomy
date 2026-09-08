@@ -239,13 +239,13 @@ The enumerated list can be passed in the bid request. It is a comma-separated ar
 
 ### Financial
 
-| Child Category | Category Definition                                                                | Enumeration Value | String Value (Deprecated) |
+| Child Category | Category Definition                                                                | Enumeration ID | String Value (Deprecated) |
 | -------------- | ---------------------------------------------------------------------------------- | ----------------- | ------------------------- |
 | Bank           | A bank is a financial institution licensed to store or invest accountholders money | 1001              | financial.bank           |
 
 ### Residential
 
-| Child Category                       | Category Definition                                  | Enumeration Value | String Value (Deprecated) |
+| Child Category                       | Category Definition                                  | Enumeration ID | String Value (Deprecated) |
 | ------------------------------------ | ---------------------------------------------------- | ----------------- | ------------------------- |
 | Apartment Building  and Condominium  | A building that contains different residential units | 1101              | residential.apartment     |
 

@@ -57,7 +57,7 @@ Resources
 | Broadsign Reach | Production | 1.1 | Supports OpenOOH v1.1.0 as of 8/3/20 - updated for 1.1 05/01/22 |
 | CAASie | Production | 1.0 | Supports OpenOOH v1.0.0 as of 07/16/20 |
 | Hivestack | Production | 1.0 | Supports OpenOOH v1.0.0 as of 3/01/21 |
-| OutMoove | Production | 1.0 | Supports OpenOOH v1.0.0 as of 09/07/20 |
+| OutMoove | Production | 1.2 | Supports OpenOOH v1.0 as of 09/07/20 - updated for 1.2 Sept/2026 |
 | Place Exchange | Production | 1.1 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 - updated for 1.1 11/16/21 |
 | Stroeer SSP| Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/01/21 |
 | Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |

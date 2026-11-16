@@ -50,20 +50,21 @@ Resources
 
 ## Adoption
 
-| Platform | Status | Version | Notes |
-| ----------- | ------ | ------- | ----- |
-| Adomni | Production | 1.1 | Supports OpenOOH v1.1 as of 2024-02-29 |
-| Broadsign Ads | Production | 1.1 | Supports OpenOOH v1.1.0 as of 12/03/20 - updated for 1.1 05/01/22 |
-| Broadsign Reach | Production | 1.1 | Supports OpenOOH v1.1.0 as of 8/3/20 - updated for 1.1 05/01/22 |
-| CAASie | Production | 1.0 | Supports OpenOOH v1.0.0 as of 07/16/20 |
-| Hivestack | Production | 1.0 | Supports OpenOOH v1.0.0 as of 3/01/21 |
-| OutMoove | Production | 1.2 | Supports OpenOOH v1.0 as of 09/07/20 - updated for 1.2 Sept/2026 |
-| Place Exchange | Production | 1.1 | Support both DMI v1.0 and OpenOOH v1.0.0 as of 9/14/20 - updated for 1.1 11/16/21 |
-| Stroeer SSP| Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/01/21 |
-| Verizon Media | Production | 1.0 | Supports OpenOOH v1.0.0 as of 10/1/20 |
-| VIOOH | Evaluating | 1.0 |  |
-| Vistar Media | Production | 1.0 | Supports OpenOOH v1.0.0 (parent/child levels only) as of 9/9/20
-| The Neuron | Production | 1.1 | Supports OpenOOH v1.0.0 as of 21/Oct/2021 - updated for 1.1 Dec/2022 |
+| Platform | Status | Current Version | Notes |
+|-----------|------|-------|-----|
+| Adomni | Production | 1.1 | v1.1 as of 2024-02-29 |
+| Broadsign Ads | Production | 1.1 | v1.0.0 as of 2020-12-03<br>v1.1 as of 2022-05-01 |
+| Broadsign Reach | Production | 1.1 | v1.0.0 as of 2020-08-03<br>v1.1 as of 2022-05-01 |
+| CAASie | Production | 1.0 | v1.0.0 as of 2020-07-16 |
+| Hivestack | Production | 1.0 | v1.0.0 as of 2021-03-01 |
+| OutMoove | Production | 1.2 | v1.0 as of 2020-09-07<br>v1.2 as of 2026-09 |
+| Place Exchange | Production | 1.1 | v1.0.0 as of 2020-09-14<br>v1.1 as of 2021-11-16 |
+| Stroeer SSP | Production | 1.0 | v1.0.0 as of 2021-10-01 |
+| Verizon Media | Production | 1.0 | v1.0.0 as of 2020-10-01 |
+| VIOOH | Production | 1.1 | v1.1 as of 2022-08-04 |
+| Vistar Media | Production | 1.0 | v1.0.0 (parent/child levels only) as of 2020-09-09 |
+| The Neuron | Production | 1.1 | v1.0.0 as of 2021-10-21<br>v1.1 as of 2022-12 |
+
 
 ## Licensing
-This specification is licensed under a Apache 2.0 License. To view a copy of this license, visit [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0).
+This specification is licensed under the Apache License 2.0. To view a copy of this license, visit [https://www.apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0).
